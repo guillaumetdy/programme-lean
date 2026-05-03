@@ -329,6 +329,103 @@
   .btn-export-dislikes { background:var(--dislike); color:#fff; }
   .btn-export-dislikes:hover:not(:disabled) { opacity:.85; }
 
+  /* ── WORKOUT LOG ── */
+  .workout-selector { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  .ws-btn {
+    padding:10px 22px; border-radius:999px; border:1px solid var(--border);
+    font-size:13px; font-weight:500; cursor:pointer; font-family:'DM Sans',sans-serif;
+    background:transparent; color:var(--ink-muted); transition:all .15s;
+  }
+  .ws-btn:hover { border-color:var(--border-strong); color:var(--ink); }
+  .ws-btn.active { background:var(--ink); color:var(--cream); border-color:var(--ink); }
+  .ws-btn-opt.active { background:var(--dislike); border-color:var(--dislike); }
+
+  .workout-meta { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap; gap:10px; }
+  .workout-date-wrap { display:flex; align-items:center; gap:8px; }
+  .workout-date-label { font-size:12px; color:var(--ink-muted); }
+  .workout-date { font-family:'DM Serif Display',serif; font-size:18px; color:var(--ink); }
+  .btn-save-workout {
+    font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500;
+    padding:9px 20px; border-radius:999px; background:var(--teal); color:#fff;
+    border:none; cursor:pointer; transition:opacity .15s;
+  }
+  .btn-save-workout:hover { opacity:.85; }
+
+  /* Exercise card */
+  .ex-card { background:#fff; border:1px solid var(--border); border-radius:14px; margin-bottom:12px; overflow:hidden; }
+  .ex-card-head {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 18px; cursor:pointer; user-select:none;
+    border-bottom:1px solid var(--border);
+  }
+  .ex-card-head:hover { background:rgba(26,23,20,0.02); }
+  .ex-card-left { display:flex; align-items:center; gap:10px; }
+  .ex-card-name { font-weight:500; font-size:14px; color:var(--ink); }
+  .ex-card-meta { font-size:11px; color:var(--ink-muted); }
+  .ex-card-chevron { font-size:11px; color:var(--ink-muted); transition:transform .2s; }
+  .ex-card.open .ex-card-chevron { transform:rotate(90deg); }
+  .ex-card-body { display:none; padding:14px 18px; }
+  .ex-card.open .ex-card-body { display:block; }
+
+  /* Last session hint */
+  .last-session-hint { font-size:11px; color:var(--ink-muted); margin-bottom:12px; font-style:italic; }
+  .last-session-hint strong { color:var(--teal); font-style:normal; }
+
+  /* Series rows */
+  .series-row { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .series-num { font-size:11px; font-weight:500; color:var(--ink-muted); width:20px; text-align:center; flex-shrink:0; }
+  .series-input-wrap { display:flex; align-items:center; gap:6px; flex:1; }
+  .series-input {
+    width:68px; padding:10px 8px; border-radius:10px; border:1px solid var(--border);
+    font-size:15px; font-family:'DM Sans',sans-serif; font-weight:500;
+    text-align:center; color:var(--ink); background:#fff;
+    -moz-appearance:textfield; transition:border-color .15s;
+  }
+  .series-input::-webkit-inner-spin-button,
+  .series-input::-webkit-outer-spin-button { -webkit-appearance:none; }
+  .series-input:focus { outline:none; border-color:var(--teal); }
+  .series-input::placeholder { color:var(--ink-muted); font-size:12px; font-weight:300; }
+  .series-sep { font-size:12px; color:var(--ink-muted); flex-shrink:0; }
+  .series-done-btn {
+    width:36px; height:36px; border-radius:10px; border:1px solid var(--border);
+    background:transparent; cursor:pointer; font-size:14px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center; transition:all .15s;
+  }
+  .series-done-btn.done { background:var(--teal); border-color:var(--teal); color:#fff; }
+  .series-done-btn:not(.done):hover { border-color:var(--teal); }
+
+  /* Rest timer */
+  .rest-timer-bar { display:none; align-items:center; gap:10px; margin-top:10px; padding:10px 12px; background:var(--teal-light); border-radius:10px; }
+  .rest-timer-bar.visible { display:flex; }
+  .rest-timer-label { font-size:12px; color:var(--teal); font-weight:500; }
+  .rest-timer-count { font-family:'DM Serif Display',serif; font-size:20px; color:var(--teal); min-width:36px; }
+  .rest-timer-skip { font-size:12px; color:var(--teal); cursor:pointer; margin-left:auto; opacity:.7; }
+  .rest-timer-skip:hover { opacity:1; }
+
+  /* Notes */
+  .ex-notes { width:100%; margin-top:10px; padding:9px 12px; border:1px solid var(--border); border-radius:10px; font-family:'DM Sans',sans-serif; font-size:13px; color:var(--ink-light); resize:none; min-height:48px; background:#fff; }
+  .ex-notes:focus { outline:none; border-color:var(--teal); }
+  .ex-notes::placeholder { color:var(--ink-muted); }
+
+  /* Progress badge */
+  .progress-badge { display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:2px 8px; border-radius:999px; margin-left:8px; }
+  .progress-badge.up   { background:#e8f5e9; color:#2e7d32; }
+  .progress-badge.same { background:rgba(26,23,20,0.06); color:var(--ink-muted); }
+  .progress-badge.new  { background:var(--teal-light); color:var(--teal); }
+
+  /* History */
+  .history-header { display:flex; align-items:center; justify-content:space-between; padding:14px 0; border-top:1px solid var(--border); margin-top:8px; cursor:pointer; font-size:14px; font-weight:500; color:var(--ink-light); user-select:none; }
+  .history-header:hover { color:var(--ink); }
+  .history-entry { background:#fff; border:1px solid var(--border); border-radius:12px; padding:16px 20px; margin-bottom:8px; }
+  .history-entry-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+  .history-entry-date { font-family:'DM Serif Display',serif; font-size:16px; font-weight:400; }
+  .history-entry-type { font-size:11px; font-weight:500; padding:2px 9px; border-radius:999px; }
+  .history-entry-body { font-size:12px; color:var(--ink-light); line-height:1.8; }
+  .history-entry-ex { display:flex; gap:6px; margin-bottom:2px; }
+  .history-entry-exname { font-weight:500; color:var(--ink); min-width:180px; }
+  .btn-del-history { font-size:11px; color:var(--ink-muted); background:none; border:none; cursor:pointer; padding:2px 6px; border-radius:6px; transition:all .15s; }
+  .btn-del-history:hover { background:var(--accent-pale); color:var(--accent); }
+
   /* ── FOOTER ── */
   footer { background:var(--ink); color:rgba(245,240,232,0.4); text-align:center; padding:28px 48px; font-size:12px; letter-spacing:.04em; font-weight:300; }
   footer strong { color:rgba(245,240,232,0.7); font-weight:400; }
@@ -444,56 +541,34 @@
 
 <!-- ══════════ MUSCULATION ══════════ -->
 <section class="section" id="section-musculation">
-  <div class="section-header"><h2>Musculation</h2><span class="section-desc">Split Push / Pull / Legs · salle complète</span></div>
-  <div class="card" style="margin-bottom:12px;">
-    <div class="card-title">Push <span class="badge badge-push">Poussée</span></div>
-    <div class="card-sub">Pectoraux · Épaules · Triceps</div>
-    <table class="ex-table">
-      <tr><td>Développé couché barre</td><td>4 × 6–8 reps</td><td>90s</td></tr>
-      <tr><td>Développé incliné haltères</td><td>3 × 8–10 reps</td><td>75s</td></tr>
-      <tr><td>Élévations latérales</td><td>4 × 12–15 reps</td><td>60s</td></tr>
-      <tr><td>Développé militaire</td><td>3 × 8–10 reps</td><td>75s</td></tr>
-      <tr><td>Dips lestés</td><td>3 × max reps</td><td>75s</td></tr>
-      <tr><td>Extension triceps corde</td><td>3 × 12 reps</td><td>60s</td></tr>
-    </table>
+  <div class="section-header"><h2>Musculation</h2><span class="section-desc">Carnet de séance · saisie des poids en direct</span></div>
+
+  <!-- Sélecteur de séance -->
+  <div class="workout-selector">
+    <button class="ws-btn active" onclick="selectWorkout('push',this)">Push</button>
+    <button class="ws-btn" onclick="selectWorkout('pull',this)">Pull</button>
+    <button class="ws-btn" onclick="selectWorkout('legs',this)">Legs</button>
+    <button class="ws-btn ws-btn-opt" onclick="selectWorkout('full',this)">Full body</button>
   </div>
-  <div class="card" style="margin-bottom:12px;">
-    <div class="card-title">Pull <span class="badge badge-pull">Tirage</span></div>
-    <div class="card-sub">Dos · Biceps · Trapèzes</div>
-    <table class="ex-table">
-      <tr><td>Tractions lestées</td><td>4 × 5–8 reps</td><td>90s</td></tr>
-      <tr><td>Rowing barre</td><td>3 × 8–10 reps</td><td>75s</td></tr>
-      <tr><td>Tirage poitrine poulie</td><td>3 × 10–12 reps</td><td>60s</td></tr>
-      <tr><td>Face pull</td><td>3 × 15 reps</td><td>60s</td></tr>
-      <tr><td>Curl barre</td><td>3 × 10 reps</td><td>60s</td></tr>
-      <tr><td>Curl marteau</td><td>2 × 12 reps</td><td>60s</td></tr>
-    </table>
-    <div class="note-box"><strong>Attention épaules :</strong> la natation sollicite déjà le dos. Réduire les séries si tension.</div>
+
+  <!-- Date + bouton valider -->
+  <div class="workout-meta">
+    <div class="workout-date-wrap">
+      <span class="workout-date-label">Séance du</span>
+      <span class="workout-date" id="workout-date"></span>
+    </div>
+    <button class="btn-save-workout" onclick="saveWorkout()">✓ Enregistrer la séance</button>
   </div>
-  <div class="card" style="margin-bottom:12px;">
-    <div class="card-title">Legs + Core <span class="badge" style="background:var(--gold-light);color:var(--gold);">Jambes</span></div>
-    <div class="card-sub">Cuisses · Fessiers · Gainage</div>
-    <table class="ex-table">
-      <tr><td>Squat barre</td><td>4 × 6–8 reps</td><td>2 min</td></tr>
-      <tr><td>Romanian deadlift</td><td>3 × 8–10 reps</td><td>90s</td></tr>
-      <tr><td>Leg press</td><td>3 × 10–12 reps</td><td>75s</td></tr>
-      <tr><td>Fentes marchées</td><td>3 × 12 reps</td><td>60s</td></tr>
-      <tr><td>Planche + variantes</td><td>3 × 45 sec</td><td>45s</td></tr>
-      <tr><td>Ab wheel / crunch poulie</td><td>3 × 12–15 reps</td><td>45s</td></tr>
-    </table>
+
+  <!-- Zone exercices (rendue par JS) -->
+  <div id="workout-exercises"></div>
+
+  <!-- Historique -->
+  <div class="history-header" onclick="toggleHistory()">
+    <span>Historique des séances</span>
+    <span id="history-toggle-icon">▸</span>
   </div>
-  <div class="card card-accent">
-    <div class="card-title">Full body léger <span class="badge badge-opt">Optionnel</span></div>
-    <div class="card-sub">4e séance · 40 min</div>
-    <table class="ex-table">
-      <tr><td>Tractions</td><td>3 × max reps</td><td></td></tr>
-      <tr><td>Développé haltères</td><td>3 × 10 reps</td><td></td></tr>
-      <tr><td>Romanian deadlift</td><td>3 × 10 reps</td><td></td></tr>
-      <tr><td>Curl + Extension</td><td>2 × 12 reps chacun</td><td></td></tr>
-      <tr><td>Gainage core</td><td>2 × 45 sec</td><td></td></tr>
-    </table>
-    <div class="note-box">Intensité 70% — ne pas forcer si fatigue résiduelle.</div>
-  </div>
+  <div id="workout-history" style="display:none;"></div>
 </section>
 
 <!-- ══════════ NATATION ══════════ -->
@@ -848,7 +923,304 @@ function resetCourses() {
   document.querySelectorAll('.shop-item').forEach(el => el.classList.remove('checked'));
 }
 
-/* ════ LOAD food.json ════ */
+/* ════ WORKOUT DATA ════ */
+const WORKOUTS = {
+  push: {
+    label: 'Push', badge: 'badge-push',
+    note: 'Attention épaules si tu nages le lendemain.',
+    exercises: [
+      { id:'dev-couche',    name:'Développé couché barre',    sets:4, reps:'6–8',   rest:90  },
+      { id:'dev-incline',   name:'Développé incliné haltères',sets:3, reps:'8–10',  rest:75  },
+      { id:'elev-lat',      name:'Élévations latérales',      sets:4, reps:'12–15', rest:60  },
+      { id:'dev-mil',       name:'Développé militaire',       sets:3, reps:'8–10',  rest:75  },
+      { id:'dips',          name:'Dips lestés',               sets:3, reps:'max',   rest:75  },
+      { id:'ext-tri',       name:'Extension triceps corde',   sets:3, reps:'12',    rest:60  },
+    ]
+  },
+  pull: {
+    label: 'Pull', badge: 'badge-pull',
+    note: 'La natation sollicite déjà le dos — réduire si tension.',
+    exercises: [
+      { id:'tractions',     name:'Tractions lestées',         sets:4, reps:'5–8',   rest:90  },
+      { id:'rowing',        name:'Rowing barre',              sets:3, reps:'8–10',  rest:75  },
+      { id:'tirage-poi',    name:'Tirage poitrine poulie',    sets:3, reps:'10–12', rest:60  },
+      { id:'face-pull',     name:'Face pull',                 sets:3, reps:'15',    rest:60  },
+      { id:'curl-barre',    name:'Curl barre',                sets:3, reps:'10',    rest:60  },
+      { id:'curl-marteau',  name:'Curl marteau',              sets:2, reps:'12',    rest:60  },
+    ]
+  },
+  legs: {
+    label: 'Legs + Core', badge: 'badge-legs',
+    note: 'Ne pas nager dans les 24h qui suivent.',
+    exercises: [
+      { id:'squat',         name:'Squat barre',               sets:4, reps:'6–8',   rest:120 },
+      { id:'rdl',           name:'Romanian deadlift',         sets:3, reps:'8–10',  rest:90  },
+      { id:'leg-press',     name:'Leg press',                 sets:3, reps:'10–12', rest:75  },
+      { id:'fentes',        name:'Fentes marchées',           sets:3, reps:'12',    rest:60  },
+      { id:'planche',       name:'Planche + variantes',       sets:3, reps:'45s',   rest:45, isTime:true },
+      { id:'ab-wheel',      name:'Ab wheel / crunch poulie',  sets:3, reps:'12–15', rest:45  },
+    ]
+  },
+  full: {
+    label: 'Full body', badge: 'badge-opt',
+    note: 'Intensité 70% — ne pas forcer si fatigue résiduelle.',
+    exercises: [
+      { id:'f-tractions',   name:'Tractions',                 sets:3, reps:'max',   rest:75  },
+      { id:'f-dev',         name:'Développé haltères',        sets:3, reps:'10',    rest:60  },
+      { id:'f-rdl',         name:'Romanian deadlift',         sets:3, reps:'10',    rest:60  },
+      { id:'f-curl',        name:'Curl biceps',               sets:2, reps:'12',    rest:60  },
+      { id:'f-ext',         name:'Extension triceps',         sets:2, reps:'12',    rest:60  },
+      { id:'f-planche',     name:'Gainage core',              sets:2, reps:'45s',   rest:45, isTime:true },
+    ]
+  }
+};
+
+let currentWorkout = 'push';
+let restTimerInterval = null;
+
+/* ── Select workout ── */
+function selectWorkout(type, btn) {
+  currentWorkout = type;
+  document.querySelectorAll('.ws-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderExercises(type);
+  stopRestTimer();
+}
+
+/* ── Render exercises ── */
+function renderExercises(type) {
+  const w    = WORKOUTS[type];
+  const date = new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
+  document.getElementById('workout-date').textContent = date;
+
+  const history = getHistory();
+  const lastSession = history.find(h => h.type === type);
+
+  let html = '';
+  if (w.note) html += `<div class="note-box" style="margin-bottom:14px;">${w.note}</div>`;
+
+  w.exercises.forEach(ex => {
+    const lastEx  = lastSession?.exercises?.[ex.id];
+    const lastHint = lastEx
+      ? `Dernière fois : <strong>${lastEx.map((s,i) => `S${i+1} ${s.kg||'—'}kg × ${s.reps||'—'}`).join(' · ')}</strong>`
+      : 'Première séance';
+
+    let seriesHTML = '';
+    for (let s = 0; s < ex.sets; s++) {
+      const lastKg   = lastEx?.[s]?.kg   || '';
+      const lastReps = lastEx?.[s]?.reps || '';
+      seriesHTML += `
+        <div class="series-row" id="row-${ex.id}-${s}">
+          <span class="series-num">S${s+1}</span>
+          <div class="series-input-wrap">
+            <input class="series-input" type="number" min="0" step="0.5"
+              id="kg-${ex.id}-${s}" placeholder="${lastKg||'kg'}" inputmode="decimal"
+              onchange="checkProgress('${ex.id}')">
+            <span class="series-sep">kg ×</span>
+            <input class="series-input" type="number" min="0"
+              id="reps-${ex.id}-${s}" placeholder="${lastReps||ex.reps}" inputmode="numeric">
+          </div>
+          <button class="series-done-btn" id="done-${ex.id}-${s}"
+            onclick="markDone('${ex.id}',${s},${ex.rest})" title="Série terminée">✓</button>
+        </div>`;
+    }
+
+    html += `
+      <div class="ex-card" id="exc-${ex.id}">
+        <div class="ex-card-head" onclick="toggleEx('${ex.id}')">
+          <div class="ex-card-left">
+            <div>
+              <div class="ex-card-name">${ex.name} <span id="prog-${ex.id}"></span></div>
+              <div class="ex-card-meta">${ex.sets} séries · ${ex.reps} reps · repos ${ex.rest}s</div>
+            </div>
+          </div>
+          <span class="ex-card-chevron">▸</span>
+        </div>
+        <div class="ex-card-body">
+          <div class="last-session-hint">${lastHint}</div>
+          ${seriesHTML}
+          <div class="rest-timer-bar" id="timer-${ex.id}">
+            <span class="rest-timer-label">Repos</span>
+            <span class="rest-timer-count" id="timer-count-${ex.id}"></span>
+            <span class="rest-timer-skip" onclick="stopRestTimer()">Passer ›</span>
+          </div>
+          <textarea class="ex-notes" id="notes-${ex.id}" placeholder="Notes (variante, ressenti…)" rows="2"></textarea>
+        </div>
+      </div>`;
+  });
+
+  document.getElementById('workout-exercises').innerHTML = html;
+  // Open first exercise
+  toggleEx(w.exercises[0].id);
+  checkProgress(w.exercises[0].id);
+}
+
+/* ── Toggle exercise card ── */
+function toggleEx(id) {
+  const card = document.getElementById('exc-' + id);
+  if (!card) return;
+  const isOpen = card.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.ex-card.open').forEach(c => c.classList.remove('open'));
+  if (!isOpen) card.classList.add('open');
+}
+
+/* ── Mark series done + start rest timer ── */
+function markDone(exId, seriesIdx, restSecs) {
+  const btn = document.getElementById(`done-${exId}-${seriesIdx}`);
+  if (!btn) return;
+  const isDone = btn.classList.toggle('done');
+  if (isDone) {
+    startRestTimer(exId, restSecs);
+  } else {
+    stopRestTimer();
+  }
+}
+
+/* ── Rest timer ── */
+function startRestTimer(exId, secs) {
+  stopRestTimer();
+  const bar   = document.getElementById('timer-' + exId);
+  const count = document.getElementById('timer-count-' + exId);
+  if (!bar || !count) return;
+  bar.classList.add('visible');
+  let remaining = secs;
+  count.textContent = formatTime(remaining);
+  restTimerInterval = setInterval(() => {
+    remaining--;
+    if (remaining <= 0) {
+      stopRestTimer();
+      // subtle vibration on mobile
+      if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+    } else {
+      count.textContent = formatTime(remaining);
+    }
+  }, 1000);
+}
+function stopRestTimer() {
+  if (restTimerInterval) { clearInterval(restTimerInterval); restTimerInterval = null; }
+  document.querySelectorAll('.rest-timer-bar.visible').forEach(b => b.classList.remove('visible'));
+}
+function formatTime(s) { return s >= 60 ? `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}` : `${s}s`; }
+
+/* ── Progress badge ── */
+function checkProgress(exId) {
+  const history  = getHistory();
+  const last     = history.find(h => h.type === currentWorkout);
+  const lastEx   = last?.exercises?.[exId];
+  const badge    = document.getElementById('prog-' + exId);
+  if (!badge) return;
+  if (!lastEx) { badge.className='progress-badge new'; badge.textContent='Nouveau'; return; }
+
+  const w  = WORKOUTS[currentWorkout];
+  const ex = w.exercises.find(e => e.id === exId);
+  if (!ex) return;
+
+  let maxKgNow  = 0;
+  let maxKgLast = 0;
+  for (let s = 0; s < ex.sets; s++) {
+    const v = parseFloat(document.getElementById(`kg-${exId}-${s}`)?.value || 0);
+    if (v > maxKgNow) maxKgNow = v;
+    const lv = parseFloat(lastEx[s]?.kg || 0);
+    if (lv > maxKgLast) maxKgLast = lv;
+  }
+  if (!maxKgNow) { badge.textContent=''; return; }
+  if (maxKgNow > maxKgLast) { badge.className='progress-badge up'; badge.textContent='↑ PR'; }
+  else { badge.className='progress-badge same'; badge.textContent='='; }
+}
+
+/* ── Save workout ── */
+function saveWorkout() {
+  const w   = WORKOUTS[currentWorkout];
+  const now = new Date();
+  const entry = {
+    type: currentWorkout,
+    label: w.label,
+    date: now.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}),
+    ts: now.getTime(),
+    exercises: {}
+  };
+  w.exercises.forEach(ex => {
+    const sets = [];
+    for (let s = 0; s < ex.sets; s++) {
+      sets.push({
+        kg:   document.getElementById(`kg-${ex.id}-${s}`)?.value   || '',
+        reps: document.getElementById(`reps-${ex.id}-${s}`)?.value || ''
+      });
+    }
+    entry.exercises[ex.id] = sets;
+    entry.exercises[ex.id + '_notes'] = document.getElementById('notes-' + ex.id)?.value || '';
+  });
+
+  const history = getHistory();
+  history.unshift(entry);
+  // Keep max 30 entries
+  if (history.length > 30) history.splice(30);
+  localStorage.setItem('workout_history', JSON.stringify(history));
+
+  // Feedback
+  const btn = document.querySelector('.btn-save-workout');
+  btn.textContent = '✓ Enregistré !';
+  btn.style.background = '#2e7d32';
+  setTimeout(() => { btn.textContent = '✓ Enregistrer la séance'; btn.style.background = ''; }, 2000);
+  renderHistory();
+}
+
+/* ── History ── */
+function getHistory() {
+  try { return JSON.parse(localStorage.getItem('workout_history') || '[]'); } catch { return []; }
+}
+
+function toggleHistory() {
+  const el   = document.getElementById('workout-history');
+  const icon = document.getElementById('history-toggle-icon');
+  const open = el.style.display === 'none';
+  el.style.display = open ? 'block' : 'none';
+  icon.textContent  = open ? '▾' : '▸';
+  if (open) renderHistory();
+}
+
+function renderHistory() {
+  const history = getHistory();
+  const el = document.getElementById('workout-history');
+  if (!history.length) { el.innerHTML = '<p style="color:var(--ink-muted);font-size:13px;padding:8px 0;">Aucune séance enregistrée.</p>'; return; }
+
+  const BADGE_H = { push:'badge-push', pull:'badge-pull', legs:'badge-legs', full:'badge-opt' };
+  el.innerHTML = history.map((h, hi) => {
+    const exLines = Object.entries(h.exercises)
+      .filter(([k]) => !k.endsWith('_notes'))
+      .map(([exId, sets]) => {
+        const exDef = WORKOUTS[h.type]?.exercises?.find(e => e.id === exId);
+        if (!exDef) return '';
+        const setsStr = sets.map((s,i) => s.kg ? `S${i+1} ${s.kg}kg×${s.reps||'?'}` : '').filter(Boolean).join(' · ');
+        return `<div class="history-entry-ex"><span class="history-entry-exname">${exDef.name}</span><span>${setsStr||'—'}</span></div>`;
+      }).join('');
+    return `<div class="history-entry">
+      <div class="history-entry-head">
+        <div class="history-entry-date">${h.date}</div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="badge ${BADGE_H[h.type]||'badge-rest'}">${h.label}</span>
+          <button class="btn-del-history" onclick="deleteHistory(${hi})">✕</button>
+        </div>
+      </div>
+      <div class="history-entry-body">${exLines}</div>
+    </div>`;
+  }).join('');
+}
+
+function deleteHistory(idx) {
+  const history = getHistory();
+  history.splice(idx, 1);
+  localStorage.setItem('workout_history', JSON.stringify(history));
+  renderHistory();
+}
+
+// Init
+document.addEventListener('DOMContentLoaded', () => {
+  renderExercises('push');
+});
+
+
 fetch('food.json')
   .then(r => { if (!r.ok) throw new Error(); return r.json(); })
   .then(data => {
