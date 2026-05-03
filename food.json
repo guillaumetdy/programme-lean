@@ -1,0 +1,312 @@
+{
+  "semaine": "Semaine 2",
+  "periode": "4 – 10 mai 2026",
+  "saison": "Printemps",
+  "produits_du_moment": "Asperges vertes, petits pois frais, fraises, roquette, tomates cerise, menthe fraîche, ciboulette, courgettes nouvelles",
+
+  "petit_dejeuner": [
+    {
+      "nom": "Œufs brouillés aux épinards et ciboulette",
+      "badge": "Tous les jours",
+      "badge_type": "rest",
+      "macros": "~32g protéines · ~30g glucides · ~18g lipides · 410 kcal",
+      "description": "4 œufs entiers brouillés avec une poignée d'épinards frais tombés à la poêle, ciboulette fraîche ciselée, 2 tranches de pain complet. Rapide, nutritif, stable toute la matinée.",
+      "ingredients": [
+        { "nom": "Œufs entiers (4)", "type": "p" },
+        { "nom": "Pain complet (2 tranches)", "type": "g" },
+        { "nom": "Épinards frais (60g)", "type": "g" },
+        { "nom": "Ciboulette fraîche", "type": "g" },
+        { "nom": "Huile d'olive (1 c.s.)", "type": "f" }
+      ]
+    }
+  ],
+
+  "dejeuner": [
+    {
+      "nom": "Bœuf haché, riz complet, asperges rôties",
+      "badge": "Post-séance",
+      "badge_type": "post",
+      "macros": "~55g protéines · ~72g glucides · ~15g lipides · 645 kcal",
+      "description": "Bœuf haché 5% poêlé aux échalotes et cumin, riz complet, asperges vertes rôties au four avec un filet d'huile d'olive. Riche en fer et zinc pour la récupération musculaire.",
+      "ingredients": [
+        { "nom": "Bœuf haché 5% (180g)", "type": "p" },
+        { "nom": "Riz complet (80g sec)", "type": "g" },
+        { "nom": "Asperges vertes (200g)", "type": "g" },
+        { "nom": "Huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Bowl crevettes, quinoa, petits pois et menthe",
+      "badge": "Post-natation",
+      "badge_type": "swim",
+      "macros": "~48g protéines · ~58g glucides · ~10g lipides · 510 kcal",
+      "description": "Crevettes poêlées à l'ail et au citron, quinoa chaud, petits pois frais blanchis, feuilles de menthe fraîche. Léger, iodé et plein de fraîcheur printanière. +150 kcal les jours de natation.",
+      "ingredients": [
+        { "nom": "Crevettes (200g)", "type": "p" },
+        { "nom": "Quinoa (70g sec)", "type": "g" },
+        { "nom": "Petits pois frais (80g)", "type": "g" },
+        { "nom": "Menthe fraîche + citron", "type": "g" },
+        { "nom": "Huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Lieu noir rôti, boulgour, épinards à l'ail",
+      "badge": "Post-séance",
+      "badge_type": "post",
+      "macros": "~50g protéines · ~65g glucides · ~12g lipides · 575 kcal",
+      "description": "Filet de lieu noir rôti au four avec herbes de Provence, boulgour moelleux, épinards frais sautés à l'ail. Poisson maigre, digeste et économique, parfait en milieu de semaine.",
+      "ingredients": [
+        { "nom": "Lieu noir (160g)", "type": "p" },
+        { "nom": "Boulgour (75g sec)", "type": "g" },
+        { "nom": "Épinards frais (150g)", "type": "g" },
+        { "nom": "Ail + huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Thon, pois chiches, tomates cerise et citron",
+      "badge": "Repos",
+      "badge_type": "rest",
+      "macros": "~48g protéines · ~52g glucides · ~10g lipides · 490 kcal",
+      "description": "Thon au naturel émietté, pois chiches égouttés, tomates cerise, vinaigrette citron-cumin. Salad bowl froid à préparer à l'avance. Très pratique les jours de repos.",
+      "ingredients": [
+        { "nom": "Thon au naturel (150g)", "type": "p" },
+        { "nom": "Pois chiches (80g sec)", "type": "g" },
+        { "nom": "Tomates cerise (100g)", "type": "g" },
+        { "nom": "Huile d'olive + citron", "type": "f" }
+      ]
+    }
+  ],
+
+  "diner": [
+    {
+      "nom": "Dinde, asperges vapeur, fromage blanc ciboulette",
+      "badge": "Glucides bas le soir",
+      "badge_type": "rest",
+      "macros": "~52g protéines · ~12g glucides · ~6g lipides · 315 kcal",
+      "description": "Filets de dinde poêlés, asperges cuites vapeur, fromage blanc 0% à la ciboulette fraîche en accompagnement. Protéines élevées, quasi zéro glucides, idéal avant le coucher.",
+      "ingredients": [
+        { "nom": "Dinde (180g)", "type": "p" },
+        { "nom": "Asperges vertes (200g)", "type": "g" },
+        { "nom": "Fromage blanc 0% (100g)", "type": "p" },
+        { "nom": "Ciboulette fraîche + huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Lieu noir en papillote, épinards sautés, citron",
+      "badge": "Léger & récupération",
+      "badge_type": "rest",
+      "macros": "~42g protéines · ~8g glucides · ~8g lipides · 275 kcal",
+      "description": "Filet de lieu noir cuit en papillote avec rondelles de citron et thym, épinards frais sautés à l'ail. Très peu calorique, parfait les jours de repos pour maintenir le déficit.",
+      "ingredients": [
+        { "nom": "Lieu noir (160g)", "type": "p" },
+        { "nom": "Épinards frais (200g)", "type": "g" },
+        { "nom": "Citron + thym", "type": "g" },
+        { "nom": "Huile d'olive + ail", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Saumon poêlé, courgettes et petits pois",
+      "badge": "Après natation",
+      "badge_type": "swim",
+      "macros": "~44g protéines · ~15g glucides · ~20g lipides · 415 kcal",
+      "description": "Pavé de saumon doré à la poêle, courgettes nouvelles sautées et petits pois frais. Riche en oméga-3, idéal pour la récupération après la piscine du soir.",
+      "ingredients": [
+        { "nom": "Saumon (150g)", "type": "p" },
+        { "nom": "Courgettes nouvelles (150g)", "type": "g" },
+        { "nom": "Petits pois frais (50g)", "type": "g" },
+        { "nom": "Huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Steak bœuf maigre, poêlée d'asperges, roquette",
+      "badge": "15 min max",
+      "badge_type": "rest",
+      "macros": "~44g protéines · ~8g glucides · ~18g lipides · 370 kcal",
+      "description": "Steak de bœuf maigre grillé saignant, asperges vertes poêlées, lit de roquette avec parmesan râpé et vinaigre balsamique. Rapide, savoureux et très bas en glucides.",
+      "ingredients": [
+        { "nom": "Bœuf maigre (160g)", "type": "p" },
+        { "nom": "Asperges vertes (150g)", "type": "g" },
+        { "nom": "Roquette (60g)", "type": "g" },
+        { "nom": "Parmesan + huile d'olive", "type": "f" }
+      ]
+    }
+  ],
+
+  "snacks": [
+    {
+      "nom": "Skyr, fraises et graines de chia",
+      "badge": "Post-natation",
+      "badge_type": "swim",
+      "macros": "~22g protéines · ~22g glucides · ~5g lipides · 220 kcal",
+      "description": "180g de skyr nature, fraises fraîches tranchées, graines de chia. À préparer dans un petit tupperware à emporter au bord de la piscine. À consommer dans les 30 min après la séance.",
+      "ingredients": [
+        { "nom": "Skyr nature (180g)", "type": "p" },
+        { "nom": "Fraises fraîches (120g)", "type": "g" },
+        { "nom": "Graines de chia (10g)", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Œufs durs, roquette et parmesan",
+      "badge": "Coupe-faim",
+      "badge_type": "rest",
+      "macros": "~18g protéines · ~3g glucides · ~14g lipides · 210 kcal",
+      "description": "2 œufs durs, quelques feuilles de roquette, copeaux de parmesan. Riche en protéines et lipides de qualité, zéro sucre ajouté, très transportable.",
+      "ingredients": [
+        { "nom": "Œufs durs (2)", "type": "p" },
+        { "nom": "Roquette (20g)", "type": "g" },
+        { "nom": "Parmesan (15g)", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Fromage blanc, amandes et menthe fraîche",
+      "badge": "Entre repas",
+      "badge_type": "rest",
+      "macros": "~18g protéines · ~10g glucides · ~12g lipides · 220 kcal",
+      "description": "150g de fromage blanc 0%, 20g d'amandes, quelques feuilles de menthe fraîche ciselée. Les lipides des amandes ralentissent l'absorption et tiennent jusqu'au repas suivant.",
+      "ingredients": [
+        { "nom": "Fromage blanc 0% (150g)", "type": "p" },
+        { "nom": "Amandes (20g)", "type": "f" },
+        { "nom": "Menthe fraîche", "type": "g" }
+      ]
+    }
+  ],
+
+  "planning": [
+    {
+      "jour": "Lundi",
+      "type_journee": "push",
+      "label_journee": "Push",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Bœuf haché, riz complet, asperges rôties",
+      "snack": "Fromage blanc, amandes et menthe fraîche",
+      "diner": "Dinde, asperges vapeur, fromage blanc ciboulette",
+      "note": "Déjeuner 1h30 avant séance si tu t'entraînes le matin."
+    },
+    {
+      "jour": "Mardi",
+      "type_journee": "swim",
+      "label_journee": "Natation",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Bowl crevettes, quinoa, petits pois et menthe",
+      "snack": "Skyr, fraises et graines de chia",
+      "diner": "Saumon poêlé, courgettes et petits pois",
+      "note": "Snack post-natation dans les 30 min. +150 kcal sur la journée."
+    },
+    {
+      "jour": "Mercredi",
+      "type_journee": "pull",
+      "label_journee": "Pull",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Lieu noir rôti, boulgour, épinards à l'ail",
+      "snack": "Œufs durs, roquette et parmesan",
+      "diner": "Steak bœuf maigre, poêlée d'asperges, roquette",
+      "note": null
+    },
+    {
+      "jour": "Jeudi",
+      "type_journee": "rest",
+      "label_journee": "Repos",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Thon, pois chiches, tomates cerise et citron",
+      "snack": null,
+      "diner": "Lieu noir en papillote, épinards sautés, citron",
+      "note": "Pas de snack — journée de repos, calories légèrement réduites."
+    },
+    {
+      "jour": "Vendredi",
+      "type_journee": "legs",
+      "label_journee": "Legs",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Bœuf haché, riz complet, asperges rôties",
+      "snack": "Fromage blanc, amandes et menthe fraîche",
+      "diner": "Dinde, asperges vapeur, fromage blanc ciboulette",
+      "note": "Grand groupe musculaire — bien s'hydrater et récupérer après séance."
+    },
+    {
+      "jour": "Samedi",
+      "type_journee": "swim",
+      "label_journee": "Natation",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Bowl crevettes, quinoa, petits pois et menthe",
+      "snack": "Skyr, fraises et graines de chia",
+      "diner": "Saumon poêlé, courgettes et petits pois",
+      "note": "Snack post-natation dans les 30 min. +150 kcal sur la journée."
+    },
+    {
+      "jour": "Dimanche",
+      "type_journee": "rest",
+      "label_journee": "Repos",
+      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
+      "dejeuner": "Thon, pois chiches, tomates cerise et citron",
+      "snack": null,
+      "diner": "Lieu noir en papillote, épinards sautés, citron",
+      "note": "Jour de préparation — télécharge le nouveau food.json pour la semaine suivante."
+    }
+  ],
+
+  "courses": [
+    {
+      "categorie": "Protéines",
+      "couleur": "p",
+      "articles": [
+        { "nom": "Bœuf haché 5% MG", "quantite": "360g" },
+        { "nom": "Steak bœuf maigre", "quantite": "160g" },
+        { "nom": "Filets de lieu noir", "quantite": "500g" },
+        { "nom": "Pavés de saumon", "quantite": "300g" },
+        { "nom": "Escalopes de dinde", "quantite": "360g" },
+        { "nom": "Crevettes décortiquées", "quantite": "400g" },
+        { "nom": "Thon au naturel (boîtes)", "quantite": "2 boîtes (150g chacune)" },
+        { "nom": "Œufs entiers", "quantite": "30 œufs (3 boîtes de 10)" },
+        { "nom": "Fromage blanc 0%", "quantite": "500g" },
+        { "nom": "Skyr nature", "quantite": "360g" }
+      ]
+    },
+    {
+      "categorie": "Féculents & céréales",
+      "couleur": "g",
+      "articles": [
+        { "nom": "Pain complet (tranches)", "quantite": "1 paquet" },
+        { "nom": "Riz complet", "quantite": "300g" },
+        { "nom": "Quinoa", "quantite": "200g" },
+        { "nom": "Boulgour", "quantite": "200g" },
+        { "nom": "Pois chiches (secs ou boîte)", "quantite": "400g" }
+      ]
+    },
+    {
+      "categorie": "Légumes & herbes fraîches",
+      "couleur": "g",
+      "articles": [
+        { "nom": "Asperges vertes", "quantite": "1 kg" },
+        { "nom": "Épinards frais", "quantite": "1 kg" },
+        { "nom": "Petits pois frais ou surgelés", "quantite": "300g" },
+        { "nom": "Courgettes nouvelles", "quantite": "300g" },
+        { "nom": "Tomates cerise", "quantite": "200g" },
+        { "nom": "Roquette", "quantite": "100g" },
+        { "nom": "Ciboulette fraîche", "quantite": "1 botte" },
+        { "nom": "Menthe fraîche", "quantite": "1 botte" },
+        { "nom": "Ail", "quantite": "1 tête" },
+        { "nom": "Citrons", "quantite": "4" },
+        { "nom": "Thym (frais ou sec)", "quantite": "si stock bas" }
+      ]
+    },
+    {
+      "categorie": "Fruits",
+      "couleur": "g",
+      "articles": [
+        { "nom": "Fraises fraîches", "quantite": "300g" }
+      ]
+    },
+    {
+      "categorie": "Matières grasses & condiments",
+      "couleur": "f",
+      "articles": [
+        { "nom": "Huile d'olive", "quantite": "si stock bas" },
+        { "nom": "Amandes", "quantite": "60g" },
+        { "nom": "Parmesan râpé", "quantite": "50g" },
+        { "nom": "Graines de chia", "quantite": "30g" },
+        { "nom": "Vinaigre balsamique", "quantite": "si stock bas" },
+        { "nom": "Cumin moulu", "quantite": "si stock bas" }
+      ]
+    }
+  ]
+}
