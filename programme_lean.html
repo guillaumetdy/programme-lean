@@ -430,59 +430,6 @@
   footer { background:var(--ink); color:rgba(245,240,232,0.4); text-align:center; padding:28px 48px; font-size:12px; letter-spacing:.04em; font-weight:300; }
   footer strong { color:rgba(245,240,232,0.7); font-weight:400; }
 
-  /* ── DARK MODE ── */
-  body.dark {
-    --cream: #161412;
-    --ink: #F0EBE3;
-    --ink-light: #C8C2BA;
-    --ink-muted: #7A7570;
-    --accent-pale: #2A1A10;
-    --accent-light: #5A2810;
-    --teal-light: #0D2E26;
-    --gold-light: #2A2000;
-    --border: rgba(240,235,227,0.10);
-    --border-strong: rgba(240,235,227,0.22);
-    --like-bg: #2A0E14;
-    --dislike-bg: #1A1628;
-  }
-  body.dark .card          { background:#1E1B18; }
-  body.dark .card-accent   { background:#2A1A10; }
-  body.dark .card-teal     { background:#0D2E26; }
-  body.dark .card-gold     { background:#2A2000; }
-  body.dark .meal-card     { background:#1E1B18; }
-  body.dark .meal-card.liked    { background:#2A0E14; }
-  body.dark .meal-card.disliked { background:#1A1628; }
-  body.dark .ex-card       { background:#1E1B18; }
-  body.dark .ex-card-head:hover { background:rgba(240,235,227,0.03); }
-  body.dark .series-input  { background:#1E1B18; color:var(--ink); border-color:var(--border); }
-  body.dark .ex-notes      { background:#1E1B18; color:var(--ink-light); }
-  body.dark .history-entry { background:#1E1B18; }
-  body.dark .shop-card     { background:#1E1B18; }
-  body.dark .swim-session  { background:#0D2E26; }
-  body.dark .wpc-body      { background:#1E1B18; }
-  body.dark .wpc-rest      { background:rgba(240,235,227,0.03); }
-  body.dark .nav           { background:rgba(22,20,18,0.96); }
-  body.dark .export-bar    { background:rgba(22,20,18,0.97); }
-  body.dark .macro-tracker-card { background:#1E1B18; }
-  body.dark .macro-input   { background:#1E1B18; color:var(--ink); }
-  body.dark .weight-input  { background:#1E1B18; color:var(--ink); }
-  body.dark canvas         { filter: brightness(0.9); }
-
-  /* dark mode toggle button */
-  .dark-toggle {
-    margin-left:auto;
-    width:34px; height:34px;
-    border-radius:10px;
-    border:1px solid var(--border);
-    background:transparent;
-    cursor:pointer;
-    display:flex; align-items:center; justify-content:center;
-    font-size:16px;
-    transition:all .15s;
-    flex-shrink:0;
-  }
-  .dark-toggle:hover { background:var(--border); }
-
   /* ── MACRO TRACKER ── */
   .macro-tracker-card { background:#fff; border:1px solid var(--border); border-radius:16px; padding:22px 26px; margin-bottom:14px; }
   .macro-tracker-title { font-family:'DM Serif Display',serif; font-size:20px; font-weight:400; margin-bottom:4px; }
@@ -592,7 +539,6 @@
   <div class="nav-item" onclick="showSection('repas')">Repas de saison</div>
   <div class="nav-item" onclick="showSection('suivi')">Suivi</div>
   <div class="nav-item" onclick="showSection('principes')">Principes clés</div>
-  <button class="dark-toggle" onclick="toggleDark()" id="dark-btn" title="Mode sombre">🌙</button>
 </nav>
 
 <!-- ══════════ PLANNING ══════════ -->
@@ -798,82 +744,65 @@
 <section class="section" id="section-suivi">
   <div class="section-header"><h2>Suivi</h2><span class="section-desc">Macros · Poids · Progression muscu</span></div>
 
-  <!-- SUB TABS -->
   <div class="sub-tabs">
-    <button class="sub-tab active" onclick="showMeal('macros-tab',this)">Macros du jour</button>
-    <button class="sub-tab" onclick="showMeal('poids-tab',this);renderWeightChart()">Poids corporel</button>
-    <button class="sub-tab" onclick="showMeal('prog-tab',this);renderProgChart()">Progression muscu</button>
+    <button class="sub-tab active" onclick="showSuivi('macros',this)">Macros du jour</button>
+    <button class="sub-tab" onclick="showSuivi('poids',this)">Poids corporel</button>
+    <button class="sub-tab" onclick="showSuivi('prog',this)">Progression muscu</button>
   </div>
 
   <!-- MACROS TAB -->
-  <div class="sub-pane active" id="meal-macros-tab">
+  <div class="sub-pane active" id="suivi-macros">
     <div class="macro-tracker-card">
-      <div class="macro-tracker-title">Apports du jour</div>
-      <div class="macro-tracker-sub">Saisis les grammes consommés — les barres se mettent à jour en temps réel</div>
+      <div class="macro-tracker-title">Macros du jour</div>
+      <div class="macro-tracker-sub">Saisis tes grammes consommés — ou ajoute un repas type depuis food.json</div>
       <div class="macro-inputs-grid">
         <div class="macro-input-group">
           <label>Protéines (g)</label>
-          <input class="macro-input" type="number" id="mi-p" min="0" max="400" placeholder="0" oninput="updateMacroBars()">
+          <input class="macro-input" type="number" id="mi-p" min="0" placeholder="0" oninput="updateMacroBars()">
         </div>
         <div class="macro-input-group">
           <label>Glucides (g)</label>
-          <input class="macro-input" type="number" id="mi-g" min="0" max="600" placeholder="0" oninput="updateMacroBars()">
+          <input class="macro-input" type="number" id="mi-g" min="0" placeholder="0" oninput="updateMacroBars()">
         </div>
         <div class="macro-input-group">
           <label>Lipides (g)</label>
-          <input class="macro-input" type="number" id="mi-f" min="0" max="300" placeholder="0" oninput="updateMacroBars()">
+          <input class="macro-input" type="number" id="mi-f" min="0" placeholder="0" oninput="updateMacroBars()">
         </div>
       </div>
-
-      <!-- Bars -->
       <div class="macro-bar-wrap">
-        <div class="macro-bar-label">
-          <span>Protéines</span>
-          <span id="mb-p-label">0 / 180g</span>
-        </div>
+        <div class="macro-bar-label"><span>Protéines</span><span id="mb-p-label">0 / 180g</span></div>
         <div class="macro-bar-track"><div class="macro-bar-fill p" id="mb-p" style="width:0%"></div></div>
       </div>
       <div class="macro-bar-wrap" style="margin-top:10px;">
-        <div class="macro-bar-label">
-          <span>Glucides</span>
-          <span id="mb-g-label">0 / 235g</span>
-        </div>
+        <div class="macro-bar-label"><span>Glucides</span><span id="mb-g-label">0 / 235g</span></div>
         <div class="macro-bar-track"><div class="macro-bar-fill g" id="mb-g" style="width:0%"></div></div>
       </div>
       <div class="macro-bar-wrap" style="margin-top:10px;">
-        <div class="macro-bar-label">
-          <span>Lipides</span>
-          <span id="mb-f-label">0 / 65g</span>
-        </div>
+        <div class="macro-bar-label"><span>Lipides</span><span id="mb-f-label">0 / 65g</span></div>
         <div class="macro-bar-track"><div class="macro-bar-fill f" id="mb-f" style="width:0%"></div></div>
       </div>
-
       <div style="margin-top:14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
         <div style="font-size:13px;color:var(--ink-muted);">Total estimé : <strong id="mb-kcal" style="color:var(--ink);">0 kcal</strong> <span style="font-size:11px;">(cible : 2 350 kcal)</span></div>
         <button class="macro-reset-btn" onclick="resetMacros()">Réinitialiser</button>
       </div>
     </div>
-
-    <!-- Repas rapides -->
     <div class="card" style="margin-top:4px;">
       <div class="card-sub">Ajouter un repas type</div>
-      <div style="display:flex;flex-wrap:wrap;gap:8px;" id="quick-meal-btns"></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;" id="quick-meal-btns"><span style="font-size:12px;color:var(--ink-muted);">Chargement depuis food.json…</span></div>
     </div>
   </div>
 
   <!-- POIDS TAB -->
-  <div class="sub-pane" id="meal-poids-tab">
+  <div class="sub-pane" id="suivi-poids">
     <div class="macro-tracker-card">
       <div class="macro-tracker-title">Poids corporel</div>
       <div class="macro-tracker-sub">Pesée hebdomadaire le matin à jeun</div>
-
       <div class="weight-input-row">
         <input class="weight-input" type="number" id="weight-val" step="0.1" min="50" max="150" placeholder="82.0">
         <span style="font-size:14px;color:var(--ink-muted);">kg</span>
         <input class="weight-date-input" type="date" id="weight-date-in">
         <button class="btn-add-weight" onclick="addWeight()">+ Enregistrer</button>
       </div>
-
       <div class="weight-stats" id="weight-stats"></div>
       <div class="chart-wrap"><canvas id="weight-chart"></canvas></div>
       <div class="weight-history-list" id="weight-history"></div>
@@ -881,14 +810,13 @@
   </div>
 
   <!-- PROGRESSION MUSCU TAB -->
-  <div class="sub-pane" id="meal-prog-tab">
+  <div class="sub-pane" id="suivi-prog">
     <div class="macro-tracker-card">
       <div class="macro-tracker-title">Progression par exercice</div>
-      <div class="macro-tracker-sub">Poids maximum enregistré par séance depuis l'historique</div>
-
+      <div class="macro-tracker-sub">Poids maximum enregistré par séance depuis l'historique muscu</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;" id="prog-ex-selector"></div>
       <div class="chart-wrap"><canvas id="prog-chart"></canvas></div>
-      <div style="display:flex;justify-content:flex-end;margin-top:8px;">
+      <div style="display:flex;justify-content:flex-end;margin-top:12px;">
         <button class="macro-reset-btn" onclick="exportWorkoutCSV()">↓ Exporter historique muscu CSV</button>
       </div>
     </div>
@@ -937,13 +865,24 @@ function showSection(id) {
   document.getElementById('section-' + id).classList.add('active');
   event.target.classList.add('active');
   document.getElementById('export-bar').classList.toggle('visible', id === 'repas');
+  if (id === 'suivi') { renderWeightChart(); renderProgChart(); }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function showMeal(id, btn) {
-  document.querySelectorAll('.sub-pane').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  const scope = document.getElementById('section-repas');
+  scope.querySelectorAll('.sub-pane').forEach(p => p.classList.remove('active'));
+  scope.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
   document.getElementById('meal-' + id).classList.add('active');
   btn.classList.add('active');
+}
+function showSuivi(id, btn) {
+  const scope = document.getElementById('section-suivi');
+  scope.querySelectorAll('.sub-pane').forEach(p => p.classList.remove('active'));
+  scope.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('suivi-' + id).classList.add('active');
+  btn.classList.add('active');
+  if (id === 'poids') renderWeightChart();
+  if (id === 'prog')  { initProgSelector(); renderProgChart(); }
 }
 
 /* ════ PLANNING TOGGLE ════ */
@@ -1439,26 +1378,6 @@ function deleteHistory(idx) {
   renderHistory();
 }
 
-/* ════ DARK MODE ════ */
-function toggleDark() {
-  const isDark = document.body.classList.toggle('dark');
-  localStorage.setItem('darkMode', isDark ? '1' : '0');
-  document.getElementById('dark-btn').textContent = isDark ? '☀️' : '🌙';
-  // Redraw charts with new colors
-  if (weightChart) renderWeightChart();
-  if (progChart) renderProgChart();
-}
-(function initDark() {
-  const saved = localStorage.getItem('darkMode');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === '1' || (saved === null && prefersDark)) {
-    document.body.classList.add('dark');
-    document.addEventListener('DOMContentLoaded', () => {
-      const btn = document.getElementById('dark-btn');
-      if (btn) btn.textContent = '☀️';
-    });
-  }
-})();
 
 /* ════ MACRO TRACKER ════ */
 const MACRO_TARGETS = { p: 180, g: 235, f: 65 };
@@ -1537,9 +1456,8 @@ function renderWeightChart() {
   const data   = getWeightData();
   renderWeightStats(data);
   renderWeightList(data);
-  const isDark = document.body.classList.contains('dark');
-  const gridC  = isDark?'rgba(240,235,227,0.08)':'rgba(26,23,20,0.07)';
-  const textC  = isDark?'#7A7570':'#8A8480';
+  const gridC  = 'rgba(26,23,20,0.07)';
+  const textC  = '#8A8480';
   if (weightChart) weightChart.destroy();
   const ctx = document.getElementById('weight-chart')?.getContext('2d');
   if (!ctx) return;
@@ -1629,9 +1547,8 @@ function renderProgChart() {
     const maxKg=Math.max(...sets.map(s=>parseFloat(s.kg)||0));
     if(maxKg>0) points.push({label:session.date.replace(/^[a-zA-Zàâéèêëîïôùûü]+\s/,''),kg:maxKg});
   });
-  const isDark=document.body.classList.contains('dark');
-  const gridC=isDark?'rgba(240,235,227,0.08)':'rgba(26,23,20,0.07)';
-  const textC=isDark?'#7A7570':'#8A8480';
+  const gridC='rgba(26,23,20,0.07)';
+  const textC='#8A8480';
   if(progChart) progChart.destroy();
   const ctx=document.getElementById('prog-chart')?.getContext('2d');
   if(!ctx) return;
@@ -1683,14 +1600,6 @@ function exportWorkoutCSV() {
 
 /* ════ INIT ════ */
 document.addEventListener('DOMContentLoaded',()=>{
-  // Dark mode
-  const saved=localStorage.getItem('darkMode');
-  const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if(saved==='1'||(saved===null&&prefersDark)){
-    document.body.classList.add('dark');
-    const btn=document.getElementById('dark-btn');
-    if(btn) btn.textContent='☀️';
-  }
   // Date par défaut poids
   const wd=document.getElementById('weight-date-in');
   if(wd) wd.value=new Date().toISOString().split('T')[0];
