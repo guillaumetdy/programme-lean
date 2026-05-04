@@ -1,8 +1,8 @@
 {
-  "semaine": "Semaine 2",
-  "periode": "4 – 10 mai 2026",
+  "semaine": "Semaine 1",
+  "periode": "5 – 11 mai 2025",
   "saison": "Printemps",
-  "produits_du_moment": "Asperges vertes, petits pois frais, fraises, roquette, tomates cerise, menthe fraîche, ciboulette, courgettes nouvelles",
+  "produits_du_moment": "Radis, épinards, petits pois, fraises, laitue, fenouil, ciboulette, menthe fraîche",
 
   "petit_dejeuner": [
     {
@@ -23,150 +23,159 @@
 
   "dejeuner": [
     {
-      "nom": "Bœuf haché, riz complet, asperges rôties",
-      "badge": "Post-séance",
+      "nom": "Poulet grillé, riz complet, salade de radis",
+      "badge": "Lundi · Mercredi",
       "badge_type": "post",
-      "macros": "~55g protéines · ~72g glucides · ~15g lipides · 645 kcal",
-      "description": "Bœuf haché 5% poêlé aux échalotes et cumin, riz complet, asperges vertes rôties au four avec un filet d'huile d'olive. Riche en fer et zinc pour la récupération musculaire.",
+      "macros": "~55g protéines · ~75g glucides · ~14g lipides · 650 kcal",
+      "description": "Blanc de poulet mariné citron-ciboulette, riz complet, radis tranchés en salade avec vinaigrette légère. Prépares-en double le lundi pour le mercredi.",
       "ingredients": [
-        { "nom": "Bœuf haché 5% (180g)", "type": "p" },
+        { "nom": "Poulet (180g)", "type": "p" },
         { "nom": "Riz complet (80g sec)", "type": "g" },
-        { "nom": "Asperges vertes (200g)", "type": "g" },
+        { "nom": "Radis + laitue", "type": "g" },
         { "nom": "Huile d'olive", "type": "f" }
       ]
     },
     {
-      "nom": "Bowl crevettes, quinoa, petits pois et menthe",
-      "badge": "Post-natation",
+      "nom": "Bowl saumon, quinoa, épinards frais",
+      "badge": "Mardi · Samedi",
       "badge_type": "swim",
-      "macros": "~48g protéines · ~58g glucides · ~10g lipides · 510 kcal",
-      "description": "Crevettes poêlées à l'ail et au citron, quinoa chaud, petits pois frais blanchis, feuilles de menthe fraîche. Léger, iodé et plein de fraîcheur printanière. +150 kcal les jours de natation.",
+      "macros": "~48g protéines · ~60g glucides · ~22g lipides · 630 kcal",
+      "description": "Pavé de saumon rôti, quinoa chaud, épinards jeunes frais, radis tranchés, vinaigrette citron-moutarde. Parfait après la piscine — prépares-en double pour le soir.",
       "ingredients": [
-        { "nom": "Crevettes (200g)", "type": "p" },
+        { "nom": "Saumon (150g)", "type": "p" },
         { "nom": "Quinoa (70g sec)", "type": "g" },
-        { "nom": "Petits pois frais (80g)", "type": "g" },
-        { "nom": "Menthe fraîche + citron", "type": "g" },
+        { "nom": "Épinards frais + radis", "type": "g" },
+        { "nom": "Huile d'olive + moutarde", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Dinde sautée, patate douce, fenouil rôti",
+      "badge": "Jeudi",
+      "badge_type": "post",
+      "macros": "~52g protéines · ~70g glucides · ~10g lipides · 590 kcal",
+      "description": "Escalopes de dinde sautées, patate douce au four, fenouil rôti. Prépares le fenouil et la patate douce en grande quantité — le surplus sert au dîner.",
+      "ingredients": [
+        { "nom": "Dinde (180g)", "type": "p" },
+        { "nom": "Patate douce (200g)", "type": "g" },
+        { "nom": "Fenouil rôti", "type": "g" },
         { "nom": "Huile d'olive", "type": "f" }
       ]
     },
     {
-      "nom": "Lieu noir rôti, boulgour, épinards à l'ail",
-      "badge": "Post-séance",
-      "badge_type": "post",
-      "macros": "~50g protéines · ~65g glucides · ~12g lipides · 575 kcal",
-      "description": "Filet de lieu noir rôti au four avec herbes de Provence, boulgour moelleux, épinards frais sautés à l'ail. Poisson maigre, digeste et économique, parfait en milieu de semaine.",
-      "ingredients": [
-        { "nom": "Lieu noir (160g)", "type": "p" },
-        { "nom": "Boulgour (75g sec)", "type": "g" },
-        { "nom": "Épinards frais (150g)", "type": "g" },
-        { "nom": "Ail + huile d'olive", "type": "f" }
-      ]
-    },
-    {
-      "nom": "Thon, pois chiches, tomates cerise et citron",
-      "badge": "Repos",
+      "nom": "Cabillaud vapeur, lentilles vertes, vinaigrette",
+      "badge": "Vendredi · Dimanche",
       "badge_type": "rest",
-      "macros": "~48g protéines · ~52g glucides · ~10g lipides · 490 kcal",
-      "description": "Thon au naturel émietté, pois chiches égouttés, tomates cerise, vinaigrette citron-cumin. Salad bowl froid à préparer à l'avance. Très pratique les jours de repos.",
+      "macros": "~50g protéines · ~55g glucides · ~10g lipides · 510 kcal",
+      "description": "Filet de cabillaud vapeur, lentilles vertes tièdes, radis et ciboulette. Cuis les lentilles en grosse quantité le vendredi — elles se conservent 3 jours au frigo.",
       "ingredients": [
-        { "nom": "Thon au naturel (150g)", "type": "p" },
-        { "nom": "Pois chiches (80g sec)", "type": "g" },
-        { "nom": "Tomates cerise (100g)", "type": "g" },
-        { "nom": "Huile d'olive + citron", "type": "f" }
+        { "nom": "Cabillaud (160g)", "type": "p" },
+        { "nom": "Lentilles vertes (80g sec)", "type": "g" },
+        { "nom": "Radis + ciboulette", "type": "g" },
+        { "nom": "Huile de noix", "type": "f" }
       ]
     }
   ],
 
   "diner": [
     {
-      "nom": "Dinde, asperges vapeur, fromage blanc ciboulette",
-      "badge": "Glucides bas le soir",
+      "nom": "Poulet, épinards sautés à l'ail (suite du midi)",
+      "badge": "Lundi · Mercredi",
       "badge_type": "rest",
-      "macros": "~52g protéines · ~12g glucides · ~6g lipides · 315 kcal",
-      "description": "Filets de dinde poêlés, asperges cuites vapeur, fromage blanc 0% à la ciboulette fraîche en accompagnement. Protéines élevées, quasi zéro glucides, idéal avant le coucher.",
+      "macros": "~48g protéines · ~10g glucides · ~9g lipides · 320 kcal",
+      "description": "Le poulet du midi, réchauffé ou froid, servi avec des épinards sautés à l'ail. Même protéine, même prep — zéro effort supplémentaire. Fromage blanc en dessert pour compléter les protéines.",
       "ingredients": [
-        { "nom": "Dinde (180g)", "type": "p" },
-        { "nom": "Asperges vertes (200g)", "type": "g" },
-        { "nom": "Fromage blanc 0% (100g)", "type": "p" },
-        { "nom": "Ciboulette fraîche + huile d'olive", "type": "f" }
-      ]
-    },
-    {
-      "nom": "Lieu noir en papillote, épinards sautés, citron",
-      "badge": "Léger & récupération",
-      "badge_type": "rest",
-      "macros": "~42g protéines · ~8g glucides · ~8g lipides · 275 kcal",
-      "description": "Filet de lieu noir cuit en papillote avec rondelles de citron et thym, épinards frais sautés à l'ail. Très peu calorique, parfait les jours de repos pour maintenir le déficit.",
-      "ingredients": [
-        { "nom": "Lieu noir (160g)", "type": "p" },
-        { "nom": "Épinards frais (200g)", "type": "g" },
-        { "nom": "Citron + thym", "type": "g" },
+        { "nom": "Poulet (160g, reste du midi)", "type": "p" },
+        { "nom": "Épinards frais (150g)", "type": "g" },
+        { "nom": "Fromage blanc 0% (150g)", "type": "p" },
         { "nom": "Huile d'olive + ail", "type": "f" }
       ]
     },
     {
-      "nom": "Saumon poêlé, courgettes et petits pois",
-      "badge": "Après natation",
+      "nom": "Saumon, épinards et citron (suite du midi)",
+      "badge": "Mardi · Samedi",
       "badge_type": "swim",
-      "macros": "~44g protéines · ~15g glucides · ~20g lipides · 415 kcal",
-      "description": "Pavé de saumon doré à la poêle, courgettes nouvelles sautées et petits pois frais. Riche en oméga-3, idéal pour la récupération après la piscine du soir.",
+      "macros": "~44g protéines · ~8g glucides · ~20g lipides · 390 kcal",
+      "description": "Le saumon du midi réchauffé ou en papillote express (10 min au four), avec épinards tombés et rondelles de citron. Même achat, préparation différente — le saumon prend bien la papillote.",
       "ingredients": [
-        { "nom": "Saumon (150g)", "type": "p" },
-        { "nom": "Courgettes nouvelles (150g)", "type": "g" },
-        { "nom": "Petits pois frais (50g)", "type": "g" },
+        { "nom": "Saumon (150g, reste ou 2e filet)", "type": "p" },
+        { "nom": "Épinards frais (150g)", "type": "g" },
+        { "nom": "Citron + ciboulette", "type": "g" },
         { "nom": "Huile d'olive", "type": "f" }
       ]
     },
     {
-      "nom": "Steak bœuf maigre, poêlée d'asperges, roquette",
-      "badge": "15 min max",
-      "badge_type": "rest",
-      "macros": "~44g protéines · ~8g glucides · ~18g lipides · 370 kcal",
-      "description": "Steak de bœuf maigre grillé saignant, asperges vertes poêlées, lit de roquette avec parmesan râpé et vinaigre balsamique. Rapide, savoureux et très bas en glucides.",
+      "nom": "Dinde, fenouil et patate douce (suite du midi)",
+      "badge": "Jeudi",
+      "badge_type": "post",
+      "macros": "~46g protéines · ~40g glucides · ~8g lipides · 420 kcal",
+      "description": "Le surplus de dinde, fenouil et patate douce du midi, réchauffé à la poêle. Si tu as cuit en double le midi, le dîner ne demande que 5 minutes. Parfait après une séance legs.",
       "ingredients": [
-        { "nom": "Bœuf maigre (160g)", "type": "p" },
-        { "nom": "Asperges vertes (150g)", "type": "g" },
-        { "nom": "Roquette (60g)", "type": "g" },
-        { "nom": "Parmesan + huile d'olive", "type": "f" }
+        { "nom": "Dinde (150g, reste du midi)", "type": "p" },
+        { "nom": "Patate douce (100g, reste)", "type": "g" },
+        { "nom": "Fenouil (reste du midi)", "type": "g" },
+        { "nom": "Huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Crevettes sautées, lentilles tièdes, gingembre",
+      "badge": "Vendredi",
+      "badge_type": "rest",
+      "macros": "~44g protéines · ~40g glucides · ~8g lipides · 410 kcal",
+      "description": "Les lentilles cuites du midi, réchauffées avec des crevettes sautées à l'ail et gingembre. Changement de protéine pour varier, mais les lentilles sont déjà prêtes — 10 min de préparation.",
+      "ingredients": [
+        { "nom": "Crevettes (180g)", "type": "p" },
+        { "nom": "Lentilles vertes (reste du midi)", "type": "g" },
+        { "nom": "Gingembre + ail", "type": "g" },
+        { "nom": "Huile de sésame", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Omelette aux petits pois et ciboulette",
+      "badge": "Dimanche",
+      "badge_type": "rest",
+      "macros": "~34g protéines · ~12g glucides · ~18g lipides · 345 kcal",
+      "description": "Omelette 5 œufs avec petits pois frais et ciboulette. Simple et rapide pour le dimanche soir — les lentilles du midi t'ont déjà bien rassasié.",
+      "ingredients": [
+        { "nom": "Œufs (5)", "type": "p" },
+        { "nom": "Petits pois frais (80g)", "type": "g" },
+        { "nom": "Ciboulette fraîche", "type": "g" },
+        { "nom": "Huile d'olive", "type": "f" }
       ]
     }
   ],
 
   "snacks": [
     {
-      "nom": "Skyr, fraises et graines de chia",
+      "nom": "Fromage blanc + fraises",
       "badge": "Post-natation",
       "badge_type": "swim",
-      "macros": "~22g protéines · ~22g glucides · ~5g lipides · 220 kcal",
-      "description": "180g de skyr nature, fraises fraîches tranchées, graines de chia. À préparer dans un petit tupperware à emporter au bord de la piscine. À consommer dans les 30 min après la séance.",
+      "macros": "~22g protéines · ~25g glucides · ~1g lipides · 200 kcal",
+      "description": "200g de fromage blanc 0%, fraises fraîches, quelques gouttes de miel. Dans un tupperware dans le sac de piscine.",
       "ingredients": [
-        { "nom": "Skyr nature (180g)", "type": "p" },
-        { "nom": "Fraises fraîches (120g)", "type": "g" },
-        { "nom": "Graines de chia (10g)", "type": "f" }
+        { "nom": "Fromage blanc 0% (200g)", "type": "p" },
+        { "nom": "Fraises fraîches (150g)", "type": "g" }
       ]
     },
     {
-      "nom": "Œufs durs, roquette et parmesan",
+      "nom": "Œufs durs + radis",
       "badge": "Coupe-faim",
       "badge_type": "rest",
-      "macros": "~18g protéines · ~3g glucides · ~14g lipides · 210 kcal",
-      "description": "2 œufs durs, quelques feuilles de roquette, copeaux de parmesan. Riche en protéines et lipides de qualité, zéro sucre ajouté, très transportable.",
+      "macros": "~18g protéines · ~4g glucides · ~12g lipides · 200 kcal",
+      "description": "2 œufs durs, botte de radis avec une pincée de fleur de sel. Transportables, zéro sucre.",
       "ingredients": [
         { "nom": "Œufs durs (2)", "type": "p" },
-        { "nom": "Roquette (20g)", "type": "g" },
-        { "nom": "Parmesan (15g)", "type": "f" }
+        { "nom": "Radis (100g)", "type": "g" }
       ]
     },
     {
-      "nom": "Fromage blanc, amandes et menthe fraîche",
+      "nom": "Skyr + amandes",
       "badge": "Entre repas",
       "badge_type": "rest",
-      "macros": "~18g protéines · ~10g glucides · ~12g lipides · 220 kcal",
-      "description": "150g de fromage blanc 0%, 20g d'amandes, quelques feuilles de menthe fraîche ciselée. Les lipides des amandes ralentissent l'absorption et tiennent jusqu'au repas suivant.",
+      "macros": "~20g protéines · ~15g glucides · ~10g lipides · 230 kcal",
+      "description": "150g de skyr nature, 20g d'amandes. Tient jusqu'au repas suivant.",
       "ingredients": [
-        { "nom": "Fromage blanc 0% (150g)", "type": "p" },
-        { "nom": "Amandes (20g)", "type": "f" },
-        { "nom": "Menthe fraîche", "type": "g" }
+        { "nom": "Skyr nature (150g)", "type": "p" },
+        { "nom": "Amandes (20g)", "type": "f" }
       ]
     }
   ],
@@ -176,136 +185,198 @@
       "jour": "Lundi",
       "type_journee": "push",
       "label_journee": "Push",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Bœuf haché, riz complet, asperges rôties",
-      "snack": "Fromage blanc, amandes et menthe fraîche",
-      "diner": "Dinde, asperges vapeur, fromage blanc ciboulette",
-      "note": "Déjeuner 1h30 avant séance si tu t'entraînes le matin."
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Poulet grillé, riz complet, radis",
+      "snack": "Skyr + amandes",
+      "diner": "Poulet + épinards sautés (reste midi)",
+      "note": "Prépare double portion de poulet — le surplus = dîner."
     },
     {
       "jour": "Mardi",
       "type_journee": "swim",
       "label_journee": "Natation",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Bowl crevettes, quinoa, petits pois et menthe",
-      "snack": "Skyr, fraises et graines de chia",
-      "diner": "Saumon poêlé, courgettes et petits pois",
-      "note": "Snack post-natation dans les 30 min. +150 kcal sur la journée."
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Bowl saumon, quinoa, épinards",
+      "snack": "Fromage blanc + fraises",
+      "diner": "Saumon en papillote + épinards (2e filet)",
+      "note": "Achète 2 filets de saumon le lundi — le 2e pour ce soir."
     },
     {
       "jour": "Mercredi",
       "type_journee": "pull",
       "label_journee": "Pull",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Lieu noir rôti, boulgour, épinards à l'ail",
-      "snack": "Œufs durs, roquette et parmesan",
-      "diner": "Steak bœuf maigre, poêlée d'asperges, roquette",
-      "note": null
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Poulet grillé, riz complet, radis (reste lundi)",
+      "snack": "Œufs durs + radis",
+      "diner": "Poulet + épinards sautés (reste midi)",
+      "note": "Le riz et le poulet du lundi — simplement réchauffés."
     },
     {
       "jour": "Jeudi",
       "type_journee": "rest",
       "label_journee": "Repos",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Thon, pois chiches, tomates cerise et citron",
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Dinde, patate douce, fenouil rôti",
       "snack": null,
-      "diner": "Lieu noir en papillote, épinards sautés, citron",
-      "note": "Pas de snack — journée de repos, calories légèrement réduites."
+      "diner": "Dinde + fenouil + patate douce (reste midi)",
+      "note": "Cuis en double — dîner = 5 min de réchauffage."
     },
     {
       "jour": "Vendredi",
       "type_journee": "legs",
       "label_journee": "Legs",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Bœuf haché, riz complet, asperges rôties",
-      "snack": "Fromage blanc, amandes et menthe fraîche",
-      "diner": "Dinde, asperges vapeur, fromage blanc ciboulette",
-      "note": "Grand groupe musculaire — bien s'hydrater et récupérer après séance."
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Cabillaud vapeur, lentilles vertes",
+      "snack": "Skyr + amandes",
+      "diner": "Crevettes sautées + lentilles (reste midi)",
+      "note": "Cuis les lentilles en grosse quantité — elles servent dim aussi."
     },
     {
       "jour": "Samedi",
       "type_journee": "swim",
       "label_journee": "Natation",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Bowl crevettes, quinoa, petits pois et menthe",
-      "snack": "Skyr, fraises et graines de chia",
-      "diner": "Saumon poêlé, courgettes et petits pois",
-      "note": "Snack post-natation dans les 30 min. +150 kcal sur la journée."
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Bowl saumon, quinoa, épinards",
+      "snack": "Fromage blanc + fraises",
+      "diner": "Saumon en papillote + épinards (2e filet)",
+      "note": "Même logique que mardi — achète 2 filets le samedi matin."
     },
     {
       "jour": "Dimanche",
       "type_journee": "rest",
       "label_journee": "Repos",
-      "petit_dejeuner": "Œufs brouillés aux épinards et ciboulette",
-      "dejeuner": "Thon, pois chiches, tomates cerise et citron",
+      "petit_dejeuner": "Œufs brouillés épinards & ciboulette",
+      "dejeuner": "Cabillaud vapeur, lentilles (reste vendredi)",
       "snack": null,
-      "diner": "Lieu noir en papillote, épinards sautés, citron",
-      "note": "Jour de préparation — télécharge le nouveau food.json pour la semaine suivante."
+      "diner": "Omelette petits pois & ciboulette",
+      "note": "Lentilles du vendredi + nouveau food.json à télécharger ce soir."
     }
   ],
 
   "courses": [
     {
-      "categorie": "Protéines",
-      "couleur": "p",
-      "articles": [
-        { "nom": "Bœuf haché 5% MG", "quantite": "360g" },
-        { "nom": "Steak bœuf maigre", "quantite": "160g" },
-        { "nom": "Filets de lieu noir", "quantite": "500g" },
-        { "nom": "Pavés de saumon", "quantite": "300g" },
-        { "nom": "Escalopes de dinde", "quantite": "360g" },
-        { "nom": "Crevettes décortiquées", "quantite": "400g" },
-        { "nom": "Thon au naturel (boîtes)", "quantite": "2 boîtes (150g chacune)" },
-        { "nom": "Œufs entiers", "quantite": "30 œufs (3 boîtes de 10)" },
-        { "nom": "Fromage blanc 0%", "quantite": "500g" },
-        { "nom": "Skyr nature", "quantite": "360g" }
+      "run": 1,
+      "label": "Courses du lundi",
+      "jours": "Lundi · Mardi · Mercredi",
+      "couleur": "push",
+      "categories": [
+        {
+          "categorie": "Protéines",
+          "couleur": "p",
+          "articles": [
+            { "nom": "Blancs de poulet", "quantite": "720g (4 × 180g)" },
+            { "nom": "Pavés de saumon", "quantite": "300g (2 × 150g)" },
+            { "nom": "Œufs entiers", "quantite": "1 boîte (12)" },
+            { "nom": "Fromage blanc 0%", "quantite": "600g" },
+            { "nom": "Skyr nature", "quantite": "150g" }
+          ]
+        },
+        {
+          "categorie": "Féculents & céréales",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Riz complet", "quantite": "320g sec (4 repas)" },
+            { "nom": "Quinoa", "quantite": "140g sec (2 repas)" },
+            { "nom": "Pain complet", "quantite": "1 paquet" }
+          ]
+        },
+        {
+          "categorie": "Légumes & herbes",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Épinards frais", "quantite": "800g" },
+            { "nom": "Radis", "quantite": "2 bottes" },
+            { "nom": "Laitue", "quantite": "1 pièce" },
+            { "nom": "Ciboulette fraîche", "quantite": "1 botte" },
+            { "nom": "Citrons", "quantite": "2" },
+            { "nom": "Ail", "quantite": "1 tête" }
+          ]
+        },
+        {
+          "categorie": "Fruits & divers",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Fraises fraîches", "quantite": "300g" },
+            { "nom": "Amandes", "quantite": "60g" }
+          ]
+        }
       ]
     },
     {
-      "categorie": "Féculents & céréales",
-      "couleur": "g",
-      "articles": [
-        { "nom": "Pain complet (tranches)", "quantite": "1 paquet" },
-        { "nom": "Riz complet", "quantite": "300g" },
-        { "nom": "Quinoa", "quantite": "200g" },
-        { "nom": "Boulgour", "quantite": "200g" },
-        { "nom": "Pois chiches (secs ou boîte)", "quantite": "400g" }
+      "run": 2,
+      "label": "Courses du jeudi",
+      "jours": "Jeudi · Vendredi",
+      "couleur": "rest",
+      "categories": [
+        {
+          "categorie": "Protéines",
+          "couleur": "p",
+          "articles": [
+            { "nom": "Escalopes de dinde", "quantite": "660g (2 × 330g)" },
+            { "nom": "Filets de cabillaud", "quantite": "320g (2 × 160g)" },
+            { "nom": "Crevettes décortiquées", "quantite": "180g" },
+            { "nom": "Skyr nature", "quantite": "150g" }
+          ]
+        },
+        {
+          "categorie": "Féculents & légumineuses",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Lentilles vertes du Puy", "quantite": "200g sec (3 repas)" },
+            { "nom": "Patate douce", "quantite": "600g (3 repas)" }
+          ]
+        },
+        {
+          "categorie": "Légumes & herbes",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Fenouil", "quantite": "2 pièces" },
+            { "nom": "Radis", "quantite": "1 botte" },
+            { "nom": "Gingembre frais", "quantite": "1 morceau" },
+            { "nom": "Ciboulette fraîche", "quantite": "1 botte" }
+          ]
+        }
       ]
     },
     {
-      "categorie": "Légumes & herbes fraîches",
-      "couleur": "g",
-      "articles": [
-        { "nom": "Asperges vertes", "quantite": "1 kg" },
-        { "nom": "Épinards frais", "quantite": "1 kg" },
-        { "nom": "Petits pois frais ou surgelés", "quantite": "300g" },
-        { "nom": "Courgettes nouvelles", "quantite": "300g" },
-        { "nom": "Tomates cerise", "quantite": "200g" },
-        { "nom": "Roquette", "quantite": "100g" },
-        { "nom": "Ciboulette fraîche", "quantite": "1 botte" },
-        { "nom": "Menthe fraîche", "quantite": "1 botte" },
-        { "nom": "Ail", "quantite": "1 tête" },
-        { "nom": "Citrons", "quantite": "4" },
-        { "nom": "Thym (frais ou sec)", "quantite": "si stock bas" }
-      ]
-    },
-    {
-      "categorie": "Fruits",
-      "couleur": "g",
-      "articles": [
-        { "nom": "Fraises fraîches", "quantite": "300g" }
-      ]
-    },
-    {
-      "categorie": "Matières grasses & condiments",
-      "couleur": "f",
-      "articles": [
-        { "nom": "Huile d'olive", "quantite": "si stock bas" },
-        { "nom": "Amandes", "quantite": "60g" },
-        { "nom": "Parmesan râpé", "quantite": "50g" },
-        { "nom": "Graines de chia", "quantite": "30g" },
-        { "nom": "Vinaigre balsamique", "quantite": "si stock bas" },
-        { "nom": "Cumin moulu", "quantite": "si stock bas" }
+      "run": 3,
+      "label": "Courses du samedi matin",
+      "jours": "Samedi · Dimanche",
+      "couleur": "swim",
+      "categories": [
+        {
+          "categorie": "Protéines",
+          "couleur": "p",
+          "articles": [
+            { "nom": "Pavés de saumon", "quantite": "300g (2 × 150g)" },
+            { "nom": "Œufs entiers", "quantite": "6 (omelette dimanche)" },
+            { "nom": "Fromage blanc 0%", "quantite": "400g" }
+          ]
+        },
+        {
+          "categorie": "Féculents & légumineuses",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Quinoa", "quantite": "140g sec" }
+          ]
+        },
+        {
+          "categorie": "Légumes & herbes",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Épinards frais", "quantite": "400g" },
+            { "nom": "Petits pois frais (ou surgelés)", "quantite": "160g" },
+            { "nom": "Ciboulette fraîche", "quantite": "1 botte" },
+            { "nom": "Citron", "quantite": "1" }
+          ]
+        },
+        {
+          "categorie": "Fruits",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Fraises fraîches", "quantite": "300g" }
+          ]
+        }
       ]
     }
   ]

@@ -288,6 +288,17 @@
   .shop-item.checked .shop-checkbox::after { content:'✓'; font-size:9px; color:#fff; font-weight:500; }
   .shop-name { font-size:13px; color:var(--ink-light); flex:1; }
   .shop-qty  { font-size:11px; color:var(--ink-muted); white-space:nowrap; }
+  .shop-run-header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 20px; border-radius:12px; border:1px solid;
+    margin-bottom:12px; gap:16px;
+  }
+  .shop-run-label { font-weight:500; font-size:15px; margin-bottom:2px; }
+  .shop-run-days  { font-size:11px; opacity:.7; letter-spacing:.04em; }
+  .shop-run-progress { display:flex; flex-direction:column; align-items:flex-end; gap:5px; flex-shrink:0; }
+  .shop-run-progress span { font-size:12px; font-weight:500; }
+  .shop-run-bar-track { width:80px; height:5px; background:rgba(255,255,255,0.35); border-radius:999px; overflow:hidden; }
+  .shop-run-bar-fill  { height:100%; border-radius:999px; transition:width .3s ease; }
   .shop-reset { display:flex; justify-content:flex-end; margin-bottom:14px; }
   .btn-reset { font-size:12px; color:var(--ink-muted); background:none; border:1px solid var(--border); border-radius:999px; padding:5px 14px; cursor:pointer; font-family:'DM Sans',sans-serif; transition:all .15s; }
   .btn-reset:hover { border-color:var(--border-strong); color:var(--ink); }
@@ -1056,30 +1067,81 @@ function shorten(str) {
 
 /* ════ RENDER COURSES ════ */
 let checkedItems = new Set();
-const dotClass   = { p:'shop-dot-p', g:'shop-dot-g', f:'shop-dot-f' };
+const dotClass = { p:'shop-dot-p', g:'shop-dot-g', f:'shop-dot-f' };
+const runColors = {
+  push: { bg:'var(--accent-pale)', border:'var(--accent-light)', text:'var(--accent)', head:'var(--accent)' },
+  swim: { bg:'#E8F4F8', border:'rgba(30,120,160,0.2)', text:'#1E78A0', head:'#1E78A0' },
+  rest: { bg:'var(--teal-light)', border:'rgba(26,107,90,0.2)', text:'var(--teal)', head:'var(--teal)' },
+  legs: { bg:'var(--gold-light)', border:'rgba(184,134,11,0.2)', text:'var(--gold)', head:'var(--gold)' }
+};
 
-function renderCourses(categories) {
-  if (!categories || !categories.length) return '<p style="color:var(--ink-muted);font-size:14px;">Aucune liste de courses.</p>';
-  return `<div class="shop-grid">${categories.map((cat, ci) => {
-    const items = cat.articles.map((art, ai) => {
-      const key     = `shop-${ci}-${ai}`;
-      const checked = checkedItems.has(key) ? 'checked' : '';
-      return `<div class="shop-item ${checked}" onclick="toggleShop(this,'${key}')">
-        <div class="shop-checkbox"></div>
-        <span class="shop-name">${art.nom}</span>
-        <span class="shop-qty">${art.quantite}</span>
-      </div>`;
+function renderCourses(runs) {
+  if (!runs || !runs.length) return '<p style="color:var(--ink-muted);font-size:14px;">Aucune liste de courses.</p>';
+
+  // Support both old format (array of categories) and new format (array of runs)
+  if (runs[0] && runs[0].categories) {
+    // New multi-run format
+    return runs.map((run, ri) => {
+      const rc = runColors[run.couleur] || runColors.rest;
+      const cats = run.categories.map((cat, ci) => {
+        const items = cat.articles.map((art, ai) => {
+          const key = `shop-${ri}-${ci}-${ai}`;
+          const checked = checkedItems.has(key) ? 'checked' : '';
+          return `<div class="shop-item ${checked}" onclick="toggleShop(this,'${key}')">
+            <div class="shop-checkbox"></div>
+            <span class="shop-name">${art.nom}</span>
+            <span class="shop-qty">${art.quantite}</span>
+          </div>`;
+        }).join('');
+        return `<div class="shop-card">
+          <div class="shop-cat"><span class="shop-dot ${dotClass[cat.couleur]||'shop-dot-g'}"></span>${cat.categorie}</div>
+          ${items}
+        </div>`;
+      }).join('');
+
+      const doneCount = run.categories.flatMap((c,ci) =>
+        c.articles.map((_,ai) => `shop-${ri}-${ci}-${ai}`)
+      ).filter(k => checkedItems.has(k)).length;
+      const totalCount = run.categories.reduce((s,c) => s + c.articles.length, 0);
+
+      return `
+        <div class="shop-run-header" style="background:${rc.bg};border-color:${rc.border};color:${rc.text};">
+          <div>
+            <div class="shop-run-label">${run.label}</div>
+            <div class="shop-run-days">${run.jours}</div>
+          </div>
+          <div class="shop-run-progress">
+            <span>${doneCount}/${totalCount}</span>
+            <div class="shop-run-bar-track"><div class="shop-run-bar-fill" style="width:${totalCount?Math.round(doneCount/totalCount*100):0}%;background:${rc.head};"></div></div>
+          </div>
+        </div>
+        <div class="shop-grid" style="margin-bottom:28px;">${cats}</div>`;
     }).join('');
-    return `<div class="shop-card">
-      <div class="shop-cat"><span class="shop-dot ${dotClass[cat.couleur]||'shop-dot-g'}"></span>${cat.categorie}</div>
-      ${items}
-    </div>`;
-  }).join('')}</div>`;
+  } else {
+    // Old flat format fallback
+    return `<div class="shop-grid">${runs.map((cat, ci) => {
+      const items = cat.articles.map((art, ai) => {
+        const key = `shop-0-${ci}-${ai}`;
+        const checked = checkedItems.has(key) ? 'checked' : '';
+        return `<div class="shop-item ${checked}" onclick="toggleShop(this,'${key}')">
+          <div class="shop-checkbox"></div>
+          <span class="shop-name">${art.nom}</span>
+          <span class="shop-qty">${art.quantite}</span>
+        </div>`;
+      }).join('');
+      return `<div class="shop-card">
+        <div class="shop-cat"><span class="shop-dot ${dotClass[cat.couleur]||'shop-dot-g'}"></span>${cat.categorie}</div>
+        ${items}
+      </div>`;
+    }).join('')}</div>`;
+  }
 }
 
 function toggleShop(el, key) {
   el.classList.toggle('checked');
   checkedItems.has(key) ? checkedItems.delete(key) : checkedItems.add(key);
+  // Re-render just the progress bars without full re-render
+  document.querySelectorAll('.shop-run-bar-fill, .shop-run-progress span').forEach(() => {});
 }
 function resetCourses() {
   checkedItems.clear();
