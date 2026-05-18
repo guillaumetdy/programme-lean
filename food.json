@@ -1,178 +1,224 @@
 {
   "semaine": "Semaine 4",
   "periode": "18 – 24 mai 2026",
-  "saison": "Printemps",
-  "produits_du_moment": "Petits pois frais, artichauts violets (poivrades), jeunes courgettes, aubergines précoces, fenouil, oignons nouveaux, ail nouveau, brocolis, tomates cerises, fraises, rhubarbe, menthe fraîche, basilic, aneth, ciboulette",
+  "saison": "Printemps tardif",
+  "produits_du_moment": "Asperges vertes, petits pois frais, radis, courgettes nouvelles, fèves, fraises, cerises, basilic, menthe, ciboulette, épinards, laitue",
 
   "petit_dejeuner": [
     {
-      "nom": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
+      "nom": "Porridge avoine, skyr, fraises et amandes effilées",
       "badge": "Tous les jours",
       "badge_type": "rest",
-      "macros": "~32g protéines · ~52g glucides · ~14g lipides · 450 kcal",
-      "description": "60g de flocons d'avoine mixés en farine, 2 œufs, 100g de fromage blanc 0% et 1/2 banane mixés en pâte, cuits à la poêle en petits pancakes. Servi avec 150g de fromage blanc supplémentaire, 100g de fraises tranchées, 15g de noisettes concassées et un filet de miel. Prépare la pâte la veille pour gagner du temps le matin.",
+      "macros": "~28g protéines · ~55g glucides · ~12g lipides · 430 kcal",
+      "description": "60g de flocons d'avoine cuits dans 250ml de lait demi-écrémé, 100g de skyr nature, 100g de fraises fraîches tranchées et 15g d'amandes effilées.",
       "ingredients": [
         { "nom": "Flocons d'avoine (60g)", "type": "g" },
-        { "nom": "Œufs (2)", "type": "p" },
-        { "nom": "Fromage blanc 0% (250g total)", "type": "p" },
+        { "nom": "Skyr nature (100g)", "type": "p" },
+        { "nom": "Lait demi-écrémé (250ml)", "type": "p" },
         { "nom": "Fraises fraîches (100g)", "type": "g" },
-        { "nom": "Noisettes concassées (15g)", "type": "f" },
-        { "nom": "1/2 banane", "type": "g" }
+        { "nom": "Amandes effilées (15g)", "type": "f" }
       ]
     }
   ],
 
   "dejeuner": [
     {
-      "nom": "Bowl quinoa, poulet teriyaki, petits pois et brocolis",
-      "badge": "Post-séance",
+      "nom": "Poulet rôti, petits pois frais, riz complet au basilic",
+      "badge": "Mar · préparé lun soir",
       "badge_type": "post",
-      "macros": "~52g protéines · ~68g glucides · ~14g lipides · 620 kcal",
-      "description": "Cubes de poulet glacés sauce teriyaki maison (sauce soja, miel, gingembre, ail nouveau), 80g de quinoa cuit, 100g de petits pois frais écossés et 150g de brocolis vapeur, parsemé de graines de sésame. Idéal après les séances Push et Legs pour reconstituer le glycogène.",
+      "macros": "~54g protéines · ~72g glucides · ~12g lipides · 630 kcal",
+      "description": "Filet de poulet rôti au four, riz complet, petits pois frais juste blanchis et basilic ciselé. Préparé lundi soir en double — une assiette ce soir, une boîte pour mardi midi.",
       "ingredients": [
         { "nom": "Filet de poulet (180g)", "type": "p" },
-        { "nom": "Quinoa (80g sec)", "type": "g" },
-        { "nom": "Petits pois frais (100g écossés)", "type": "g" },
-        { "nom": "Brocolis (150g)", "type": "g" },
-        { "nom": "Sauce soja + miel + gingembre + sésame", "type": "f" }
+        { "nom": "Riz complet (80g sec)", "type": "g" },
+        { "nom": "Petits pois frais (120g)", "type": "g" },
+        { "nom": "Basilic frais + huile d'olive", "type": "f" }
       ]
     },
     {
-      "nom": "Riz basmati, crevettes sautées, courgettes et menthe",
-      "badge": "Post-natation",
-      "badge_type": "swim",
-      "macros": "~46g protéines · ~76g glucides · ~10g lipides · 580 kcal",
-      "description": "Crevettes décortiquées sautées à l'ail nouveau et piment d'Espelette, riz basmati parfumé, jeunes courgettes en rubans rapidement sautées, finition à la menthe fraîche et zeste de citron vert. +150 kcal les jours de natation grâce aux glucides.",
+      "nom": "Pâtes complètes, thon, courgettes et citron",
+      "badge": "Mer · préparé mar soir",
+      "badge_type": "pull",
+      "macros": "~50g protéines · ~74g glucides · ~12g lipides · 600 kcal",
+      "description": "Pâtes complètes, thon en boîte au naturel égoutté, courgettes nouvelles sautées à l'ail, zeste et jus de citron, ciboulette. Préparé mardi soir en double.",
       "ingredients": [
-        { "nom": "Crevettes décortiquées (200g)", "type": "p" },
-        { "nom": "Riz basmati (80g sec)", "type": "g" },
+        { "nom": "Thon au naturel (160g égoutté)", "type": "p" },
+        { "nom": "Pâtes complètes (80g sec)", "type": "g" },
         { "nom": "Courgettes nouvelles (150g)", "type": "g" },
-        { "nom": "Menthe fraîche + citron vert", "type": "g" },
-        { "nom": "Huile d'olive + ail nouveau", "type": "f" }
+        { "nom": "Citron + ciboulette", "type": "g" },
+        { "nom": "Huile d'olive + ail", "type": "f" }
       ]
     },
     {
-      "nom": "Cabillaud rôti, boulgour aux herbes, artichauts violets",
-      "badge": "Post-séance",
-      "badge_type": "post",
-      "macros": "~46g protéines · ~64g glucides · ~14g lipides · 580 kcal",
-      "description": "Pavé de cabillaud rôti au four avec citron et thym, 80g de boulgour cuit aux herbes fraîches, artichauts violets (poivrades) braisés à l'huile d'olive et tomates cerises confites. Combo léger et complet pour la séance Pull.",
+      "nom": "Saumon grillé, quinoa, asperges vertes rôties",
+      "badge": "Jeu · préparé mer soir",
+      "badge_type": "swim",
+      "macros": "~52g protéines · ~60g glucides · ~20g lipides · 630 kcal",
+      "description": "Pavé de saumon grillé à la peau, quinoa cuit au bouillon, asperges rôties au four avec un filet d'huile. Préparé mercredi soir en double.",
       "ingredients": [
-        { "nom": "Cabillaud (180g)", "type": "p" },
-        { "nom": "Boulgour (80g sec)", "type": "g" },
-        { "nom": "Artichauts violets (4 pièces)", "type": "g" },
-        { "nom": "Tomates cerises (100g)", "type": "g" },
-        { "nom": "Huile d'olive + citron + thym", "type": "f" }
+        { "nom": "Pavé de saumon (160g)", "type": "p" },
+        { "nom": "Quinoa (75g sec)", "type": "g" },
+        { "nom": "Asperges vertes (180g)", "type": "g" },
+        { "nom": "Huile d'olive + citron", "type": "f" }
       ]
     },
     {
-      "nom": "Buddha bowl pois chiches rôtis, sarrasin, feta et tahin",
-      "badge": "Repos",
+      "nom": "Dinde sautée, lentilles vertes, radis et menthe",
+      "badge": "Ven · préparé jeu soir",
+      "badge_type": "legs",
+      "macros": "~52g protéines · ~58g glucides · ~10g lipides · 545 kcal",
+      "description": "Escalopes de dinde sautées à la poêle, lentilles vertes tièdes, radis en rondelles et menthe fraîche. Vinaigrette légère citron-moutarde. Préparé jeudi soir en double.",
+      "ingredients": [
+        { "nom": "Escalopes de dinde (180g)", "type": "p" },
+        { "nom": "Lentilles vertes (80g sec)", "type": "g" },
+        { "nom": "Radis (100g) + menthe fraîche", "type": "g" },
+        { "nom": "Huile d'olive + moutarde", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Gambas poêlées, patate douce, fèves et basilic",
+      "badge": "Sam · préparé ven soir",
+      "badge_type": "swim",
+      "macros": "~48g protéines · ~68g glucides · ~12g lipides · 580 kcal",
+      "description": "Gambas poêlées à l'ail, patate douce rôtie en cubes, fèves blanchies et basilic. Préparé vendredi soir en double pour samedi midi (jour natation).",
+      "ingredients": [
+        { "nom": "Gambas décortiquées (200g)", "type": "p" },
+        { "nom": "Patate douce (220g)", "type": "g" },
+        { "nom": "Fèves fraîches (100g écossées)", "type": "g" },
+        { "nom": "Basilic frais + huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Cabillaud vapeur, épinards à l'ail, riz complet",
+      "badge": "Dim · préparé sam soir",
       "badge_type": "rest",
-      "macros": "~34g protéines · ~70g glucides · ~18g lipides · 580 kcal",
-      "description": "Pois chiches rôtis au paprika et cumin, sarrasin tiède, feta émiettée, concombre, radis roses, jeunes pousses et sauce tahin-citron. À préparer la veille — meal-prep idéal pour les jours de repos.",
+      "macros": "~50g protéines · ~65g glucides · ~10g lipides · 545 kcal",
+      "description": "Filet de cabillaud vapeur, épinards frais tombés à l'ail, riz complet. Simple et digeste pour le dimanche. Préparé samedi soir en double.",
       "ingredients": [
-        { "nom": "Pois chiches secs (100g ≈ 250g cuits)", "type": "p" },
-        { "nom": "Sarrasin (70g sec)", "type": "g" },
-        { "nom": "Feta (80g)", "type": "p" },
-        { "nom": "Concombre + radis + jeunes pousses", "type": "g" },
-        { "nom": "Tahin + citron + huile d'olive", "type": "f" }
+        { "nom": "Cabillaud (170g)", "type": "p" },
+        { "nom": "Riz complet (80g sec)", "type": "g" },
+        { "nom": "Épinards frais (180g)", "type": "g" },
+        { "nom": "Ail + huile d'olive", "type": "f" }
       ]
     }
   ],
 
   "diner": [
     {
-      "nom": "Émincé de poulet, ratatouille printanière à l'origan",
-      "badge": "Glucides bas le soir",
-      "badge_type": "rest",
-      "macros": "~48g protéines · ~18g glucides · ~10g lipides · 340 kcal",
-      "description": "Aiguillettes de poulet poêlées, ratatouille express de jeunes courgettes, aubergine, poivrons rouges et tomates fondues à l'oignon nouveau et l'origan. Riche en protéines, faible en glucides — parfait pour la récupération nocturne.",
+      "nom": "Poulet rôti, petits pois, riz (× 2 → boîte mar midi)",
+      "badge": "Lun soir",
+      "badge_type": "post",
+      "macros": "~54g protéines · ~72g glucides · ~12g lipides · 630 kcal",
+      "description": "C'est ce soir — cuisines en double. Une assiette maintenant, une boîte hermétique au frigo pour mardi midi. Le riz et les petits pois se réchauffent en 3 min, le poulet à la poêle 2 min.",
       "ingredients": [
-        { "nom": "Aiguillettes de poulet (180g)", "type": "p" },
-        { "nom": "Courgettes + aubergine + poivrons (300g)", "type": "g" },
-        { "nom": "Tomates + oignon nouveau (150g)", "type": "g" },
-        { "nom": "Huile d'olive + origan + ail", "type": "f" }
+        { "nom": "Filets de poulet (2 × 180g)", "type": "p" },
+        { "nom": "Riz complet (160g sec)", "type": "g" },
+        { "nom": "Petits pois frais (240g)", "type": "g" },
+        { "nom": "Basilic frais + huile d'olive", "type": "f" }
       ]
     },
     {
-      "nom": "Lieu noir vapeur, fenouil braisé au citron",
-      "badge": "Léger & récupération",
-      "badge_type": "rest",
-      "macros": "~38g protéines · ~14g glucides · ~8g lipides · 290 kcal",
-      "description": "Filet de lieu noir cuit vapeur 8 min, fenouil émincé braisé au bouillon léger avec zeste de citron et graines de fenouil, finition au persil plat. Très digeste, peu calorique — idéal pour creuser le déficit les jours off.",
+      "nom": "Pâtes thon courgettes (× 2 → boîte mer midi)",
+      "badge": "Mar soir",
+      "badge_type": "pull",
+      "macros": "~50g protéines · ~74g glucides · ~12g lipides · 600 kcal",
+      "description": "Cuisines en double mardi soir. Les pâtes se réchauffent à la poêle avec un filet d'huile. La boîte se prépare froide ou tiède — au choix.",
       "ingredients": [
-        { "nom": "Lieu noir (180g)", "type": "p" },
-        { "nom": "Fenouil (1 bulbe ≈ 250g)", "type": "g" },
-        { "nom": "Persil + citron", "type": "g" },
-        { "nom": "Huile d'olive + graines de fenouil", "type": "f" }
+        { "nom": "Thon au naturel (2 × 160g)", "type": "p" },
+        { "nom": "Pâtes complètes (160g sec)", "type": "g" },
+        { "nom": "Courgettes nouvelles (300g)", "type": "g" },
+        { "nom": "Citron + ciboulette + ail", "type": "g" },
+        { "nom": "Huile d'olive", "type": "f" }
       ]
     },
     {
-      "nom": "Tartare de saumon, avocat, concombre et aneth",
-      "badge": "Après natation",
+      "nom": "Saumon, quinoa, asperges (× 2 → boîte jeu midi)",
+      "badge": "Mer soir",
       "badge_type": "swim",
-      "macros": "~36g protéines · ~12g glucides · ~24g lipides · 420 kcal",
-      "description": "Saumon cru ultra-frais coupé au couteau, mélangé à 1/2 avocat, concombre en brunoise, aneth fraîche, échalote, sauce soja-citron et un filet d'huile de sésame. Oméga-3 et bons lipides pour réparer après la piscine.",
+      "macros": "~52g protéines · ~60g glucides · ~20g lipides · 630 kcal",
+      "description": "Cuisines en double mercredi soir. Le quinoa et les asperges se conservent très bien. Le saumon peut se manger froid le midi — il est encore meilleur.",
       "ingredients": [
-        { "nom": "Saumon cru qualité sushi (150g)", "type": "p" },
-        { "nom": "Concombre (100g)", "type": "g" },
-        { "nom": "Aneth + échalote", "type": "g" },
-        { "nom": "Avocat (1/2)", "type": "f" },
-        { "nom": "Huile de sésame + citron + soja", "type": "f" }
+        { "nom": "Pavés de saumon (2 × 160g)", "type": "p" },
+        { "nom": "Quinoa (150g sec)", "type": "g" },
+        { "nom": "Asperges vertes (360g)", "type": "g" },
+        { "nom": "Huile d'olive + citron", "type": "f" }
       ]
     },
     {
-      "nom": "Steak de thon snacké, roquette, tomates cerises et parmesan",
-      "badge": "15 min max",
-      "badge_type": "rest",
-      "macros": "~46g protéines · ~8g glucides · ~14g lipides · 340 kcal",
-      "description": "Steak de thon rouge saisi 1 min de chaque côté (mi-cuit), posé sur un lit de roquette, tomates cerises coupées en deux et copeaux de parmesan, vinaigrette balsamique et huile d'olive. Express, riche en fer pour booster la séance Pull du lendemain.",
+      "nom": "Dinde, lentilles, radis (× 2 → boîte ven midi)",
+      "badge": "Jeu soir",
+      "badge_type": "legs",
+      "macros": "~52g protéines · ~58g glucides · ~10g lipides · 545 kcal",
+      "description": "Cuisines en double jeudi soir. Les lentilles se conservent 3 jours au frigo. La boîte du vendredi se mange froide ou réchauffée — ajoute les radis et la menthe au moment.",
       "ingredients": [
-        { "nom": "Steak de thon rouge (160g)", "type": "p" },
-        { "nom": "Roquette + tomates cerises (200g)", "type": "g" },
-        { "nom": "Parmesan AOP (20g)", "type": "p" },
-        { "nom": "Huile d'olive + vinaigre balsamique", "type": "f" }
+        { "nom": "Escalopes de dinde (2 × 180g)", "type": "p" },
+        { "nom": "Lentilles vertes (160g sec)", "type": "g" },
+        { "nom": "Radis (200g) + menthe fraîche", "type": "g" },
+        { "nom": "Huile d'olive + moutarde + citron", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Gambas, patate douce, fèves (× 2 → boîte sam midi)",
+      "badge": "Ven soir",
+      "badge_type": "swim",
+      "macros": "~48g protéines · ~68g glucides · ~12g lipides · 580 kcal",
+      "description": "Cuisines en double vendredi soir. La patate douce se réchauffe bien. Les gambas peuvent se manger froides dans la boîte — avec un filet de citron c'est excellent.",
+      "ingredients": [
+        { "nom": "Gambas décortiquées (2 × 200g)", "type": "p" },
+        { "nom": "Patate douce (440g)", "type": "g" },
+        { "nom": "Fèves fraîches (200g écossées)", "type": "g" },
+        { "nom": "Basilic + huile d'olive", "type": "f" }
+      ]
+    },
+    {
+      "nom": "Cabillaud, épinards, riz (× 2 → boîte dim midi)",
+      "badge": "Sam soir",
+      "badge_type": "rest",
+      "macros": "~50g protéines · ~65g glucides · ~10g lipides · 545 kcal",
+      "description": "Cuisines en double samedi soir. Le cabillaud vapeur se réchauffe 2 min ou se mange froid. La boîte du dimanche se complète avec un filet de citron.",
+      "ingredients": [
+        { "nom": "Cabillaud (2 × 170g)", "type": "p" },
+        { "nom": "Riz complet (160g sec)", "type": "g" },
+        { "nom": "Épinards frais (360g)", "type": "g" },
+        { "nom": "Ail + huile d'olive", "type": "f" }
       ]
     }
   ],
 
   "snacks": [
     {
-      "nom": "Smoothie fromage blanc, banane et flocons d'avoine",
+      "nom": "Smoothie skyr, fraises et flocons d'avoine",
       "badge": "Post-natation",
       "badge_type": "swim",
-      "macros": "~24g protéines · ~32g glucides · ~4g lipides · 250 kcal",
-      "description": "200g de fromage blanc 0% mixé avec 1/2 banane bien mûre, 20g de flocons d'avoine et un peu de lait demi-écrémé. À préparer la veille dans une bouteille et glisser dans le sac de piscine — à boire dans les 30 min après la séance.",
+      "macros": "~24g protéines · ~30g glucides · ~4g lipides · 245 kcal",
+      "description": "200g de skyr mixé avec 120g de fraises et 20g de flocons d'avoine. Prépare la veille dans une bouteille — boire dans les 30 min après la séance.",
       "ingredients": [
-        { "nom": "Fromage blanc 0% (200g)", "type": "p" },
-        { "nom": "Banane (1/2)", "type": "g" },
-        { "nom": "Flocons d'avoine (20g)", "type": "g" },
-        { "nom": "Lait demi-écrémé (100ml)", "type": "p" }
+        { "nom": "Skyr nature (200g)", "type": "p" },
+        { "nom": "Fraises fraîches (120g)", "type": "g" },
+        { "nom": "Flocons d'avoine (20g)", "type": "g" }
       ]
     },
     {
-      "nom": "Œufs durs, tomates cerises et ciboulette",
+      "nom": "Cottage cheese, radis et ciboulette",
       "badge": "Coupe-faim",
       "badge_type": "rest",
-      "macros": "~20g protéines · ~6g glucides · ~14g lipides · 220 kcal",
-      "description": "3 œufs durs (10 min) écalés, salés et poivrés, accompagnés de 150g de tomates cerises et ciboulette fraîche ciselée. Très haute satiété, parfait à glisser dans une boîte pour le bureau.",
+      "macros": "~22g protéines · ~6g glucides · ~6g lipides · 175 kcal",
+      "description": "200g de cottage cheese, ciboulette fraîche, poivre, radis roses à tremper. Haute satiété, peu de calories.",
       "ingredients": [
-        { "nom": "Œufs (3)", "type": "p" },
-        { "nom": "Tomates cerises (150g)", "type": "g" },
-        { "nom": "Ciboulette fraîche", "type": "g" }
+        { "nom": "Cottage cheese (200g)", "type": "p" },
+        { "nom": "Radis (80g) + ciboulette", "type": "g" }
       ]
     },
     {
-      "nom": "Fromage blanc, noisettes et miel",
+      "nom": "Skyr, amandes et miel d'acacia",
       "badge": "Entre repas",
       "badge_type": "rest",
-      "macros": "~18g protéines · ~14g glucides · ~12g lipides · 230 kcal",
-      "description": "150g de fromage blanc 0%, 15g de noisettes entières concassées et 1 c.c. de miel. Les lipides des noisettes ralentissent la digestion — tient parfaitement jusqu'au dîner.",
+      "macros": "~18g protéines · ~14g glucides · ~12g lipides · 235 kcal",
+      "description": "150g de skyr, 15g d'amandes concassées, 1 c.c. de miel. Tient parfaitement jusqu'au dîner.",
       "ingredients": [
-        { "nom": "Fromage blanc 0% (150g)", "type": "p" },
-        { "nom": "Noisettes (15g)", "type": "f" },
-        { "nom": "Miel (1 c.c.)", "type": "g" }
+        { "nom": "Skyr nature (150g)", "type": "p" },
+        { "nom": "Amandes entières (15g)", "type": "f" },
+        { "nom": "Miel d'acacia (1 c.c.)", "type": "g" }
       ]
     }
   ],
@@ -182,162 +228,200 @@
       "jour": "Lundi",
       "type_journee": "push",
       "label_journee": "Push",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Bowl quinoa, poulet teriyaki, petits pois et brocolis",
-      "snack": "Fromage blanc, noisettes et miel",
-      "diner": "Émincé de poulet, ratatouille printanière à l'origan",
-      "note": "Déjeuner 1h30 avant séance si tu t'entraînes le matin."
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "— (courses ce soir, premier midi dès demain)",
+      "snack": "Skyr, amandes et miel",
+      "diner": "Poulet, petits pois, riz × 2 → boîte mar midi",
+      "note": "Courses ce soir. Tu cuisines en double — la boîte part au frigo pour demain."
     },
     {
       "jour": "Mardi",
       "type_journee": "swim",
       "label_journee": "Natation",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Riz basmati, crevettes sautées, courgettes et menthe",
-      "snack": "Smoothie fromage blanc, banane et flocons d'avoine",
-      "diner": "Tartare de saumon, avocat, concombre et aneth",
-      "note": "Smoothie post-natation dans les 30 min. +150 kcal sur la journée."
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "Poulet, petits pois, riz (boîte lun soir)",
+      "snack": "Smoothie skyr + fraises (dans le sac)",
+      "diner": "Pâtes thon courgettes × 2 → boîte mer midi",
+      "note": "Smoothie post-nata dans les 30 min. Ce soir tu prépares mercredi midi."
     },
     {
       "jour": "Mercredi",
       "type_journee": "pull",
       "label_journee": "Pull",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Cabillaud rôti, boulgour aux herbes, artichauts violets",
-      "snack": "Œufs durs, tomates cerises et ciboulette",
-      "diner": "Steak de thon snacké, roquette, tomates cerises et parmesan",
-      "note": null
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "Pâtes thon courgettes (boîte mar soir)",
+      "snack": "Cottage cheese, radis et ciboulette",
+      "diner": "Saumon, quinoa, asperges × 2 → boîte jeu midi",
+      "note": "Ce soir tu prépares jeudi midi."
     },
     {
       "jour": "Jeudi",
       "type_journee": "rest",
       "label_journee": "Repos",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Buddha bowl pois chiches rôtis, sarrasin, feta et tahin",
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "Saumon, quinoa, asperges (boîte mer soir)",
       "snack": null,
-      "diner": "Lieu noir vapeur, fenouil braisé au citron",
-      "note": "Pas de snack — journée de repos, calories légèrement réduites."
+      "diner": "Dinde, lentilles, radis × 2 → boîte ven midi",
+      "note": "Pas de snack. Ce soir tu prépares vendredi midi."
     },
     {
       "jour": "Vendredi",
       "type_journee": "legs",
       "label_journee": "Legs",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Bowl quinoa, poulet teriyaki, petits pois et brocolis",
-      "snack": "Fromage blanc, noisettes et miel",
-      "diner": "Émincé de poulet, ratatouille printanière à l'origan",
-      "note": "Grand groupe musculaire — bien s'hydrater et récupérer après séance."
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "Dinde, lentilles, radis (boîte jeu soir)",
+      "snack": "Skyr, amandes et miel",
+      "diner": "Gambas, patate douce, fèves × 2 → boîte sam midi",
+      "note": "Ne pas nager dans les 24h. Ce soir tu prépares samedi midi."
     },
     {
       "jour": "Samedi",
       "type_journee": "swim",
       "label_journee": "Natation",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Riz basmati, crevettes sautées, courgettes et menthe",
-      "snack": "Smoothie fromage blanc, banane et flocons d'avoine",
-      "diner": "Tartare de saumon, avocat, concombre et aneth",
-      "note": "Smoothie post-natation dans les 30 min. +150 kcal sur la journée."
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "Gambas, patate douce, fèves (boîte ven soir)",
+      "snack": "Smoothie skyr + fraises (dans le sac)",
+      "diner": "Cabillaud, épinards, riz × 2 → boîte dim midi",
+      "note": "Smoothie post-nata dans les 30 min. Ce soir tu prépares dimanche midi."
     },
     {
       "jour": "Dimanche",
       "type_journee": "rest",
       "label_journee": "Repos",
-      "petit_dejeuner": "Pancakes flocons d'avoine, fromage blanc, fraises et noisettes",
-      "dejeuner": "Buddha bowl pois chiches rôtis, sarrasin, feta et tahin",
+      "petit_dejeuner": "Porridge avoine, skyr, fraises",
+      "dejeuner": "Cabillaud, épinards, riz (boîte sam soir)",
       "snack": null,
-      "diner": "Lieu noir vapeur, fenouil braisé au citron",
-      "note": "Jour de préparation — télécharge le nouveau food.json pour la semaine suivante."
+      "diner": "Poulet, petits pois, riz × 2 → boîte lun midi",
+      "note": "Télécharge le nouveau food.json. Ce soir tu prépares lundi prochain."
     }
   ],
 
   "courses": [
     {
-      "categorie": "Protéines",
-      "couleur": "p",
-      "articles": [
-        { "nom": "Filets de poulet", "quantite": "360g (2 × 180g, pour les bowls)" },
-        { "nom": "Aiguillettes de poulet", "quantite": "360g (2 × 180g, pour les dîners)" },
-        { "nom": "Crevettes décortiquées crues", "quantite": "400g" },
-        { "nom": "Filet de cabillaud", "quantite": "180g" },
-        { "nom": "Saumon cru qualité sushi", "quantite": "300g (2 × 150g)" },
-        { "nom": "Steak de thon rouge", "quantite": "160g" },
-        { "nom": "Filets de lieu noir", "quantite": "360g (2 × 180g)" },
-        { "nom": "Pois chiches secs", "quantite": "200g (2 × 100g)" },
-        { "nom": "Œufs entiers", "quantite": "24 œufs" },
-        { "nom": "Fromage blanc 0%", "quantite": "2,5 kg" },
-        { "nom": "Feta", "quantite": "160g" },
-        { "nom": "Parmesan AOP", "quantite": "50g" },
-        { "nom": "Lait demi-écrémé", "quantite": "1 L" }
+      "run": 1,
+      "label": "Courses ce soir — lundi",
+      "jours": "Lundi soir · Mardi · Mercredi",
+      "couleur": "push",
+      "categories": [
+        {
+          "categorie": "Protéines",
+          "couleur": "p",
+          "articles": [
+            { "nom": "Filets de poulet (lun soir × 2)", "quantite": "360g" },
+            { "nom": "Thon au naturel en boîte (mar soir × 2)", "quantite": "2 boîtes 160g" },
+            { "nom": "Pavés de saumon (mer soir × 2)", "quantite": "320g" },
+            { "nom": "Skyr nature (petits-déj + snacks)", "quantite": "900g" },
+            { "nom": "Cottage cheese (snack mer)", "quantite": "200g" },
+            { "nom": "Lait demi-écrémé", "quantite": "1L" }
+          ]
+        },
+        {
+          "categorie": "Féculents",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Riz complet (lun soir × 2)", "quantite": "300g" },
+            { "nom": "Pâtes complètes (mar soir × 2)", "quantite": "300g" },
+            { "nom": "Quinoa (mer soir × 2)", "quantite": "250g" },
+            { "nom": "Flocons d'avoine (petits-déj)", "quantite": "400g" }
+          ]
+        },
+        {
+          "categorie": "Légumes & herbes",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Petits pois frais (lun soir × 2)", "quantite": "500g" },
+            { "nom": "Courgettes nouvelles (mar soir × 2)", "quantite": "350g" },
+            { "nom": "Asperges vertes (mer soir × 2)", "quantite": "400g" },
+            { "nom": "Radis (snack + salade)", "quantite": "2 bottes" },
+            { "nom": "Basilic frais", "quantite": "1 botte" },
+            { "nom": "Ciboulette fraîche", "quantite": "1 botte" },
+            { "nom": "Ail", "quantite": "1 tête" },
+            { "nom": "Citrons", "quantite": "4" }
+          ]
+        },
+        {
+          "categorie": "Fruits & divers",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Fraises fraîches (petits-déj + smoothies)", "quantite": "700g" },
+            { "nom": "Amandes effilées + entières", "quantite": "120g" },
+            { "nom": "Miel d'acacia", "quantite": "si stock bas" }
+          ]
+        }
       ]
     },
     {
-      "categorie": "Féculents & céréales",
-      "couleur": "g",
-      "articles": [
-        { "nom": "Flocons d'avoine", "quantite": "500g" },
-        { "nom": "Quinoa", "quantite": "200g" },
-        { "nom": "Riz basmati", "quantite": "200g" },
-        { "nom": "Boulgour", "quantite": "100g" },
-        { "nom": "Sarrasin décortiqué (kasha)", "quantite": "150g" }
+      "run": 2,
+      "label": "Courses du jeudi",
+      "jours": "Jeudi soir · Vendredi",
+      "couleur": "rest",
+      "categories": [
+        {
+          "categorie": "Protéines",
+          "couleur": "p",
+          "articles": [
+            { "nom": "Escalopes de dinde (jeu soir × 2)", "quantite": "360g" },
+            { "nom": "Gambas décortiquées (ven soir × 2)", "quantite": "400g" },
+            { "nom": "Œufs entiers (snack + petits-déj)", "quantite": "6" },
+            { "nom": "Skyr nature", "quantite": "400g" }
+          ]
+        },
+        {
+          "categorie": "Féculents",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Lentilles vertes du Puy (jeu soir × 2)", "quantite": "250g" },
+            { "nom": "Patate douce (ven soir × 2)", "quantite": "500g" },
+            { "nom": "Flocons d'avoine", "quantite": "si stock bas" }
+          ]
+        },
+        {
+          "categorie": "Légumes & herbes",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Radis (jeu soir + snack)", "quantite": "2 bottes" },
+            { "nom": "Fèves fraîches en cosses (ven soir × 2)", "quantite": "600g" },
+            { "nom": "Menthe fraîche", "quantite": "1 botte" },
+            { "nom": "Basilic frais", "quantite": "1 botte" },
+            { "nom": "Citrons", "quantite": "2" }
+          ]
+        }
       ]
     },
     {
-      "categorie": "Légumes & herbes fraîches",
-      "couleur": "g",
-      "articles": [
-        { "nom": "Petits pois frais en cosses", "quantite": "500g (≈ 200g écossés)" },
-        { "nom": "Brocolis", "quantite": "350g" },
-        { "nom": "Jeunes courgettes", "quantite": "700g" },
-        { "nom": "Aubergine", "quantite": "1 grosse (≈ 300g)" },
-        { "nom": "Poivrons rouges", "quantite": "2" },
-        { "nom": "Tomates rondes", "quantite": "4 (≈ 400g)" },
-        { "nom": "Tomates cerises", "quantite": "500g" },
-        { "nom": "Artichauts violets (poivrades)", "quantite": "8 pièces" },
-        { "nom": "Fenouil", "quantite": "2 bulbes" },
-        { "nom": "Concombre", "quantite": "2" },
-        { "nom": "Roquette", "quantite": "150g" },
-        { "nom": "Jeunes pousses (mâche/mesclun)", "quantite": "100g" },
-        { "nom": "Radis roses", "quantite": "1 botte" },
-        { "nom": "Oignons nouveaux", "quantite": "1 botte" },
-        { "nom": "Ail nouveau", "quantite": "1 tête" },
-        { "nom": "Échalotes", "quantite": "3" },
-        { "nom": "Gingembre frais", "quantite": "1 racine" },
-        { "nom": "Avocats", "quantite": "2" },
-        { "nom": "Menthe fraîche", "quantite": "1 botte" },
-        { "nom": "Aneth frais", "quantite": "1 botte" },
-        { "nom": "Ciboulette fraîche", "quantite": "1 botte" },
-        { "nom": "Persil plat", "quantite": "1 botte" },
-        { "nom": "Basilic frais", "quantite": "1 botte" },
-        { "nom": "Citrons jaunes", "quantite": "4" },
-        { "nom": "Citrons verts", "quantite": "2" }
-      ]
-    },
-    {
-      "categorie": "Fruits",
-      "couleur": "g",
-      "articles": [
-        { "nom": "Fraises fraîches (Gariguette ou Mara)", "quantite": "800g" },
-        { "nom": "Bananes", "quantite": "5" }
-      ]
-    },
-    {
-      "categorie": "Matières grasses & condiments",
-      "couleur": "f",
-      "articles": [
-        { "nom": "Huile d'olive", "quantite": "si stock bas" },
-        { "nom": "Huile de sésame", "quantite": "petit flacon" },
-        { "nom": "Noisettes entières", "quantite": "150g" },
-        { "nom": "Graines de sésame", "quantite": "petit sachet" },
-        { "nom": "Tahin (purée de sésame)", "quantite": "petit pot" },
-        { "nom": "Miel", "quantite": "si stock bas" },
-        { "nom": "Sauce soja", "quantite": "si stock bas" },
-        { "nom": "Vinaigre balsamique", "quantite": "si stock bas" },
-        { "nom": "Paprika doux", "quantite": "si stock bas" },
-        { "nom": "Cumin moulu", "quantite": "si stock bas" },
-        { "nom": "Origan séché", "quantite": "si stock bas" },
-        { "nom": "Thym frais ou séché", "quantite": "si stock bas" },
-        { "nom": "Graines de fenouil", "quantite": "si stock bas" },
-        { "nom": "Piment d'Espelette", "quantite": "si stock bas" }
+      "run": 3,
+      "label": "Courses du samedi matin",
+      "jours": "Samedi soir · Dimanche",
+      "couleur": "swim",
+      "categories": [
+        {
+          "categorie": "Protéines",
+          "couleur": "p",
+          "articles": [
+            { "nom": "Cabillaud (sam soir × 2)", "quantite": "340g" },
+            { "nom": "Skyr nature (petits-déj + smoothies)", "quantite": "600g" },
+            { "nom": "Lait demi-écrémé", "quantite": "1L" }
+          ]
+        },
+        {
+          "categorie": "Légumes & fruits",
+          "couleur": "g",
+          "articles": [
+            { "nom": "Épinards frais (sam soir × 2)", "quantite": "400g" },
+            { "nom": "Riz complet (si stock bas)", "quantite": "300g" },
+            { "nom": "Fraises fraîches", "quantite": "500g" },
+            { "nom": "Ail + citrons", "quantite": "1 tête + 2" }
+          ]
+        },
+        {
+          "categorie": "Divers",
+          "couleur": "f",
+          "articles": [
+            { "nom": "Flocons d'avoine", "quantite": "si stock bas" },
+            { "nom": "Amandes effilées", "quantite": "si stock bas" },
+            { "nom": "Huile d'olive", "quantite": "si stock bas" }
+          ]
+        }
       ]
     }
   ]
